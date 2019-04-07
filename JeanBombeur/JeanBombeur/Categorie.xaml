@@ -1,0 +1,27 @@
+﻿<Page x:Class="JeanBombeur.Categorie"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:JeanBombeur"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Categorie">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Choisir une categorie" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <DockPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Margin="0,0,20,0"  Content="Sandwich" Click="Sandwich"/>
+            <Button Margin="0,0,20,0"  Content="Tacos"  Click="Tacos"/>
+            <Button Margin="0,0,20,0" Content="Pizza"  Click="Pizza"/>
+        </DockPanel>
+    </Grid>
+</Page>
