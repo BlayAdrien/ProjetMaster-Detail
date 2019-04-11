@@ -12,12 +12,13 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.Row="0" Text="Choisir une categorie" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="1" Text="Choisir une categorie" VerticalAlignment="Top" HorizontalAlignment="Center"/>
         <DockPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Button Margin="0,0,20,0"  Content="Sandwich" Click="Sandwich"/>
             <Button Margin="0,0,20,0"  Content="Tacos"  Click="Tacos"/>
