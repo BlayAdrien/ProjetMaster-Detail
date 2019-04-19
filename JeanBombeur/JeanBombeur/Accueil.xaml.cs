@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace JeanBombeur
 {
@@ -19,6 +20,8 @@ namespace JeanBombeur
     public partial class Accueil : Page
     {
         MainWindow window;
+        DispatcherTimer dt = new DispatcherTimer();
+
         public Accueil()
         {
             InitializeComponent();
@@ -28,10 +31,21 @@ namespace JeanBombeur
         {
             window = w;
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        
+        private void Button_Click1(object sender, RoutedEventArgs e)
         {
-            window.PageFrame.Navigate(new Categorie());
+            dt.Tick += dt_Tick;
+            dt.Interval = TimeSpan.FromMilliseconds(10);
+            dt.Start();
+            if (mProgressBar.Value == mProgressBar.Maximum)
+            {
+                window.PageFrame.Navigate(new Categorie());
+            }
+        }
+
+        void dt_Tick(object sender, EventArgs e)
+        {
+            mProgressBar.Value++;
         }
     }
 }

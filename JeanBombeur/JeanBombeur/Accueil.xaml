@@ -9,12 +9,13 @@
       Title="Accueil">
 
     <Page.Background>
-        <ImageBrush ImageSource="/Image/logo1.jpeg" />
+        <ImageBrush ImageSource="/Image/logo1.jpeg" Stretch="Uniform" />
     </Page.Background>
 
     <Grid>
-        
-        <Button Height="50" Width="120" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,85" Content="Lancer l'application" Click="Button_Click" />
-        
+        <StackPanel VerticalAlignment="Bottom">
+            <Button Content="Lancer l'opération" Height="30" Click="Button_Click1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,85"/>
+            <ProgressBar Name="mProgressBar" Height="20" VerticalAlignment="Bottom"/>
+        </StackPanel>
     </Grid>
 </Page>
