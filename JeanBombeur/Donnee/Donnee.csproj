@@ -45,5 +45,11 @@
     <Compile Include="FabriqueCategorieVide.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Metier\Metier.csproj">
+      <Project>{5F4D3D88-4DA9-4C44-8770-4BDCD4D144B0}</Project>
+      <Name>Metier</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
