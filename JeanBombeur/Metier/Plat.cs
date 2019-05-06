@@ -38,15 +38,30 @@ namespace Metier
             }
         }
 
+        private string categorie; 
+        public string Categorie
+        {
+            get { return categorie; }
+            set
+            {
+                if (value.Length > 30)
+                    categorie = value.Substring(0, 30);
+                else
+                    categorie = value;
+            }
+        }
+
         public Plat()
         {
+            categorie = "default";
             NomPlat = "default";
             PrixPlat = 0;
             listIng = new List<Ingredient>();
         }
 
-        public Plat(string nomPlat, float prixPlat, List<Ingredient> listIng)
+        public Plat(string categorie, string nomPlat, float prixPlat, List<Ingredient> listIng)
         {
+            Categorie = categorie;
             NomPlat = nomPlat;
             PrixPlat = prixPlat;
             listIng = new List<Ingredient>();

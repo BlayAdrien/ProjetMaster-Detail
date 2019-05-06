@@ -10,9 +10,9 @@ namespace Donnee
 {
     public class FabriqueCategorieVide : FabriqueCategorie
     {
-        public override Plat CreateCategorie()
+        public override Restaurant CreateCategorie()
         {
-            return new Plat();
+            return new Restaurant();
         }
     }
 }

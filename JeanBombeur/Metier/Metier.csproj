@@ -45,6 +45,7 @@
     <Compile Include="Plat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quantite.cs" />
+    <Compile Include="Restaurant.cs" />
     <Compile Include="Unite.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

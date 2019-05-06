@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,10 +10,21 @@ namespace Donnee
 {
     public class FabriqueCategorieStub : FabriqueCategorie
     {
-        public override Plat CreateCategorie()
+        public override Restaurant CreateCategorie()
         {
-            Plat p = new Plat();
+            Restaurant r = new Restaurant();
+
+
+            r.AjouterPlat(new Plat("Pizza", "Hawaienne ", 10, new ObservableCollection<Ingredient>
+            {
+                new Ingredient("Ananas", new Quantite(10, Unite.unité)),
+                new Ingredient("Ananas", new Quantite(10, Unite.unité)),
+
+            }));
+
+            return r;
 
         }
     }
 }
+//, Jambon, Fromage, Sauce Tomate

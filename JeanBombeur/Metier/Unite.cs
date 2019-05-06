@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Metier
 {
-    public class Unite
+    public enum Unite
     {
+        kg,
+        g,
+        l,
+        dl,
+        cl,
+        ml,
+        unité,
+        càc,
+        càs
     }
 }

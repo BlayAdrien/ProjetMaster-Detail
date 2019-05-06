@@ -9,6 +9,6 @@ namespace Donnee
 {
     public abstract class FabriqueCategorie
     {
-        public abstract Plat CreateCategorie();
+        public abstract Restaurant CreateCategorie();
     }
 }
