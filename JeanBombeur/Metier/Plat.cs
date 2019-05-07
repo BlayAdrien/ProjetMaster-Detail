@@ -53,7 +53,7 @@ namespace Metier
 
         public Plat()
         {
-            categorie = "default";
+            Categorie = "default";
             NomPlat = "default";
             PrixPlat = 0;
             listIng = new List<Ingredient>();

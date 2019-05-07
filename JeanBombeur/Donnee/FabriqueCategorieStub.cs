@@ -15,16 +15,13 @@ namespace Donnee
             Restaurant r = new Restaurant();
 
 
-            r.AjouterPlat(new Plat("Pizza", "Hawaienne ", 10, new ObservableCollection<Ingredient>
-            {
-                new Ingredient("Ananas", new Quantite(10, Unite.unité)),
-                new Ingredient("Ananas", new Quantite(10, Unite.unité)),
 
-            }));
-
+            r.AjouterPlat(
+                new Plat("Pizza", "Hawaienne", 10, new List<Ingredient>() ));
             return r;
 
         }
     }
 }
-//, Jambon, Fromage, Sauce Tomate
+
+//, Jambon, Fromage, Sauce Tomate 
