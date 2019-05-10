@@ -1,0 +1,6 @@
+U:\Projet XAML\JeanBombeur\Metier\bin\Debug\Metier.dll
+U:\Projet XAML\JeanBombeur\Metier\bin\Debug\Metier.pdb
+U:\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csproj.CoreCompileInputs.cache
+U:\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.dll
+U:\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.pdb
+U:\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csprojAssemblyReference.cache

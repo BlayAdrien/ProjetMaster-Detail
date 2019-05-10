@@ -1,0 +1,9 @@
+U:\Projet XAML\JeanBombeur\Donnee\bin\Debug\Donnee.dll
+U:\Projet XAML\JeanBombeur\Donnee\bin\Debug\Donnee.pdb
+U:\Projet XAML\JeanBombeur\Donnee\bin\Debug\Metier.dll
+U:\Projet XAML\JeanBombeur\Donnee\bin\Debug\Metier.pdb
+U:\Projet XAML\JeanBombeur\Donnee\obj\Debug\Donnee.csprojAssemblyReference.cache
+U:\Projet XAML\JeanBombeur\Donnee\obj\Debug\Donnee.csproj.CoreCompileInputs.cache
+U:\Projet XAML\JeanBombeur\Donnee\obj\Debug\Donnee.csproj.CopyComplete
+U:\Projet XAML\JeanBombeur\Donnee\obj\Debug\Donnee.dll
+U:\Projet XAML\JeanBombeur\Donnee\obj\Debug\Donnee.pdb
