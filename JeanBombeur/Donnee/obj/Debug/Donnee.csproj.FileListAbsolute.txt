@@ -7,3 +7,12 @@ U:\Projet XAML\JeanBombeur\Donnee\obj\Debug\Donnee.csproj.CoreCompileInputs.cach
 U:\Projet XAML\JeanBombeur\Donnee\obj\Debug\Donnee.csproj.CopyComplete
 U:\Projet XAML\JeanBombeur\Donnee\obj\Debug\Donnee.dll
 U:\Projet XAML\JeanBombeur\Donnee\obj\Debug\Donnee.pdb
+C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\Donnee\bin\Debug\Donnee.dll
+C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\Donnee\bin\Debug\Donnee.pdb
+C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\Donnee\bin\Debug\Metier.dll
+C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\Donnee\bin\Debug\Metier.pdb
+C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\Donnee\obj\Debug\Donnee.csprojResolveAssemblyReference.cache
+C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\Donnee\obj\Debug\Donnee.csproj.CoreCompileInputs.cache
+C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\Donnee\obj\Debug\Donnee.csproj.CopyComplete
+C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\Donnee\obj\Debug\Donnee.dll
+C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\Donnee\obj\Debug\Donnee.pdb

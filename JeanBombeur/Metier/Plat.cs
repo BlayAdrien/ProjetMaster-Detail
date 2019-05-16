@@ -1,15 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Metier
 {
-    public class Plat
+    public class Plat : INotifyPropertyChanged
     {
-        public List<Ingredient> ListIng { get { return listIng; } }
-        private List<Ingredient> listIng = new List<Ingredient>();
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+       // public List<Ingredient> ListIng { get { return listIng; } }
+        //private List<Ingredient> listIng = new List<Ingredient>();
 
         private string nomPlat;
         public string NomPlat
@@ -51,20 +61,29 @@ namespace Metier
             }
         }
 
+        private ObservableCollection<Ingredient> listIngredient;
+        public ReadOnlyObservableCollection<Ingredient> ListIngredient
+        {
+            get
+            {
+                return new ReadOnlyObservableCollection<Ingredient>(listIngredient);
+            }
+        }
+
         public Plat()
         {
             Categorie = "default";
             NomPlat = "default";
             PrixPlat = 0;
-            listIng = new List<Ingredient>();
+            listIngredient = new ObservableCollection<Ingredient>(); ;
         }
 
-        public Plat(string categorie, string nomPlat, float prixPlat, List<Ingredient> listIng)
+        public Plat(string categorie, string nomPlat, float prixPlat, ObservableCollection<Ingredient> listIngredient)
         {
             Categorie = categorie;
             NomPlat = nomPlat;
             PrixPlat = prixPlat;
-            listIng = new List<Ingredient>();
+            this.listIngredient = listIngredient;
         }
 
     }

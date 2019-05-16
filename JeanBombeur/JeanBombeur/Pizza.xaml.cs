@@ -22,6 +22,7 @@ namespace JeanBombeur
     public partial class Pizza : Page
     {
         public Restaurant Restaurant { get; private set; } = App.Restaurant;
+
         public Pizza()
         {
             InitializeComponent();
