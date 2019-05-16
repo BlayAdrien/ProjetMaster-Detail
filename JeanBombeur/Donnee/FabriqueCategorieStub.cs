@@ -29,9 +29,8 @@ namespace Donnee
 
 
 
-            r.AjouterPlat(
-                new Plat("Pizza", "Reine", 10, listReine ));
-                new Plat("Pizza", "Hawaienne", 10, listHawaienne);
+            r.AjouterPlat(new Plat("Pizza", "Reine", 10, listReine));
+            r.AjouterPlat(new Plat("Pizza", "Hawaienne", 10, listHawaienne));
             return r;
 
         }

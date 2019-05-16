@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Donnee;
+using Metier;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +15,6 @@ namespace JeanBombeur
     /// </summary>
     public partial class App : Application
     {
+        public static Restaurant Restaurant { get; private set; } = new FabriqueCategorieStub().CreateCategorie();
     }
 }

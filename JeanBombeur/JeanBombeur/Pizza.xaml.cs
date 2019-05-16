@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Metier;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,18 @@ namespace JeanBombeur
     /// </summary>
     public partial class Pizza : Page
     {
+        public Restaurant Restaurant { get; private set; } = App.Restaurant;
         public Pizza()
         {
             InitializeComponent();
+            listPlat.DataContext = Restaurant;
+            DataContext = this;
+        }
+
+        private void Accueil(object sender, RoutedEventArgs e)
+        {
+            Categorie c = new Categorie();
+            this.NavigationService.Navigate(c);
         }
     }
 }
