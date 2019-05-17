@@ -32,16 +32,42 @@ namespace Donnee
             r.AjouterPlat(new Plat("Pizza", "Reine", 10,
                 new ObservableCollection<Ingredient>
                 {
-                    new Ingredient("Viande hachée", new Quantite(600, Unite.g)),
+                    new Ingredient("Sauce Tomate", new Quantite(600, Unite.g)),
                     new Ingredient("Jambon", new Quantite(543, Unite.cl))
                 }
-                    ));
-            r.AjouterPlat(new Plat("Pizza", "Hawaienne", 10, 
+            ));
+            r.AjouterPlat(new Plat("Pizza", "Hawaienne", 10,
                 new ObservableCollection<Ingredient>
                 {
                     new Ingredient("Jambon", new Quantite(543, Unite.g))
                 }
-                ));
+            ));
+            r.AjouterPlat(new Plat("Pizza", "Margarita", 10,
+                 new ObservableCollection<Ingredient>
+                 {
+                    new Ingredient("Tomate", new Quantite(543, Unite.g)),
+                    new Ingredient("Mozzarella", new Quantite(543, Unite.g)),
+                    new Ingredient("Basilic", new Quantite(543, Unite.g))
+                 }
+             ));
+            r.AjouterPlat(new Plat("Pizza", "4 fromages", 10,
+                 new ObservableCollection<Ingredient>
+                 {
+                    new Ingredient("Fromage", new Quantite(543, Unite.g)),
+                 }
+             ));
+            r.AjouterPlat(new Plat("Pizza", "4 saisons", 10,
+                 new ObservableCollection<Ingredient>
+                 {
+                    new Ingredient("Mozzarella", new Quantite(543, Unite.g)),
+                    new Ingredient("Champignons", new Quantite(543, Unite.g)),
+                    new Ingredient("Jambon", new Quantite(543, Unite.g)),
+                    new Ingredient("Huile d'olive ", new Quantite(543, Unite.g)),
+                    new Ingredient("Olive", new Quantite(543, Unite.g)),
+                 }
+             ));
+
+
             return r;
 
         }
