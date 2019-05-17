@@ -10,3 +10,9 @@ C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\Metier\obj\Debug\Metier.csprojResolv
 C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\Metier\obj\Debug\Metier.csproj.CoreCompileInputs.cache
 C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\Metier\obj\Debug\Metier.dll
 C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\Metier\obj\Debug\Metier.pdb
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\Metier\bin\Debug\Metier.dll
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\Metier\bin\Debug\Metier.pdb
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csprojAssemblyReference.cache
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csproj.CoreCompileInputs.cache
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.dll
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.pdb

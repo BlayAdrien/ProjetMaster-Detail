@@ -62,3 +62,35 @@ C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\JeanBombeur\obj\Debug\Projet.csproj.
 C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\JeanBombeur\obj\Debug\Projet.csproj.CopyComplete
 C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\JeanBombeur\obj\Debug\JeanBombeur.exe
 C:\Users\adrib\Desktop\ProjetP4\JeanBombeur\JeanBombeur\obj\Debug\JeanBombeur.pdb
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\bin\Debug\JeanBombeur.exe.config
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\bin\Debug\JeanBombeur.exe
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\bin\Debug\JeanBombeur.pdb
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\bin\Debug\Donnee.dll
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\bin\Debug\Metier.dll
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\bin\Debug\Donnee.pdb
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\bin\Debug\Metier.pdb
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Projet.csprojAssemblyReference.cache
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Accueil.g.cs
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Categorie.g.cs
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\MainWindow.g.cs
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Panier.g.cs
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Pizza.g.cs
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Sandwich.g.cs
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Tacos.g.cs
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\App.g.cs
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\JeanBombeur_MarkupCompile.cache
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\JeanBombeur_MarkupCompile.lref
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Accueil.baml
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Categorie.baml
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\MainWindow.baml
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Panier.baml
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Pizza.baml
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Sandwich.baml
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Tacos.baml
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\JeanBombeur.g.resources
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\JeanBombeur.Properties.Resources.resources
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Projet.csproj.GenerateResource.cache
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Projet.csproj.CoreCompileInputs.cache
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\Projet.csproj.CopyComplete
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\JeanBombeur.exe
+U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\JeanBombeur\obj\Debug\JeanBombeur.pdb

@@ -137,7 +137,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Image\logo1.jpeg" />
-    <Resource Include="Image\logo2.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Image\Pizza.jpg" />
