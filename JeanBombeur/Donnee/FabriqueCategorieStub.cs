@@ -13,6 +13,7 @@ namespace Donnee
         public override Restaurant CreateCategorie()
         {
             Restaurant r = new Restaurant();
+            Plat p = new Plat();
        /*     List<Ingredient> listReine = new List<Ingredient>
             {
                 new Ingredient("Jambon", new Quantite(10, Unite.cl)),
@@ -39,7 +40,9 @@ namespace Donnee
             r.AjouterPlat(new Plat("Pizza", "Hawaienne", 10,
                 new ObservableCollection<Ingredient>
                 {
-                    new Ingredient("Jambon", new Quantite(543, Unite.g))
+                    new Ingredient("Jambon", new Quantite(543, Unite.g)),
+                    new Ingredient("Ananas", new Quantite(543, Unite.g))
+
                 }
             ));
             r.AjouterPlat(new Plat("Pizza", "Margarita", 10,

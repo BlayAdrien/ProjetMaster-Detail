@@ -26,24 +26,23 @@
                 <DataTemplate>
                     <StackPanel>
                         <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
-                        </Grid.ColumnDefinitions>
-                        <Button Content="Accueil" Click="Accueil" Margin="0,10,20,0" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1"/>
-                        <TextBlock Text="{Binding NomPlat, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        <TextBlock Foreground="Black" Text="{Binding Categorie}" FontWeight="Bold"  HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" Margin="0,20,0,0"/>
-                        <TextBlock Text="Nom Pizza :  " Grid.Row="2" TextAlignment="Right" Margin="0,10,0,10"/>
-                        <TextBlock Text="{Binding NomPlat}" Grid.Row="2" Grid.Column="1" Margin="0,10,0,10"/>
-                        <!--<TextBlock Text="{Binding ListIngredient}" Grid.Row="3"  TextWrapping="Wrap"  Grid.ColumnSpan="2" Margin="20,20, 20, 0"/> -->
-                      </Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                             <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Button Content="Accueil" Click="Accueil" Margin="0,10,20,0" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="1"/>
+                            <TextBlock Foreground="Black" Text="{Binding NomPlat, UpdateSourceTrigger=PropertyChanged}" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBlock Foreground="Black" Text="{Binding Categorie}" FontWeight="Bold"  HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" Margin="0,20,0,0" />
+                            <TextBlock FontSize="40" Foreground="Red" Text="{Binding PrixPlat}" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center"/>
+                        </Grid>
 
                         <StackPanel x:Name="ListIngredient" DataContext="{Binding ListIngredient}" VerticalAlignment="Bottom">
                             <Grid>
@@ -51,8 +50,8 @@
                                         <ColumnDefinition/>
                                         <ColumnDefinition/>
                                     </Grid.ColumnDefinitions>
-                                    <TextBlock Grid.Column="0" Text="{Binding NomIngredient}"/>
-                                    <StackPanel Grid.Column="1" Orientation="Horizontal" DataContext="{Binding Quantite}">
+                                    <TextBlock Grid.Column="0" Text="{Binding NomIngredient}" HorizontalAlignment="Right" Margin="0,0,20,0"/>
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal" DataContext="{Binding Quantite}" HorizontalAlignment="Left">
                                         <TextBlock Text="{Binding ValeurQuantite}"/>
                                         <TextBlock Text="{Binding Unite}"/>
                                     </StackPanel>

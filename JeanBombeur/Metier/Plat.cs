@@ -86,5 +86,9 @@ namespace Metier
             this.listIngredient = listIngredient;
         }
 
+        public void AjouterIngredient(Ingredient i)
+        {
+            listIngredient.Add(i);
+        }
     }
 }
