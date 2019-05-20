@@ -18,11 +18,17 @@ namespace JeanBombeur
     /// <summary>
     /// Logique d'interaction pour Tacos.xaml
     /// </summary>
-    public partial class Tacos : Page
+    public partial class Hamburger : Page
     {
-        public Tacos()
+        public Hamburger()
         {
             InitializeComponent();
+        }
+
+        private void Accueil(object sender, RoutedEventArgs e)
+        {
+            Categorie c = new Categorie();
+            this.NavigationService.Navigate(c);
         }
     }
 }

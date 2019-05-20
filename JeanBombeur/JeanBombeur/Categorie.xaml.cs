@@ -37,9 +37,9 @@ namespace JeanBombeur
             this.NavigationService.Navigate(p);
         }
 
-        private void Tacos(object sender, RoutedEventArgs e)
+        private void Hamburger(object sender, RoutedEventArgs e)
         {
-            Tacos t = new Tacos();
+            Hamburger t = new Hamburger();
             this.NavigationService.Navigate(t);
         }
     }

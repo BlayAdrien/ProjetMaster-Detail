@@ -63,8 +63,8 @@
     <Compile Include="Sandwich.xaml.cs">
       <DependentUpon>Sandwich.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tacos.xaml.cs">
-      <DependentUpon>Tacos.xaml</DependentUpon>
+    <Compile Include="Hambuger.xaml.cs">
+      <DependentUpon>Hambuger.xaml</DependentUpon>
     </Compile>
     <Page Include="Accueil.xaml">
       <SubType>Designer</SubType>
@@ -104,7 +104,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Tacos.xaml">
+    <Page Include="Hambuger.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
