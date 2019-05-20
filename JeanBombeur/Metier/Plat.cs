@@ -70,18 +70,30 @@ namespace Metier
             }
         }
 
+        private string image; 
+        public string Image
+        {
+            get { return image; }
+            set
+            {
+                image = value; OnPropertyChanged();
+            }
+        }
+
         public Plat()
         {
             Categorie = "default";
             NomPlat = "default";
+            Image = image;
             PrixPlat = 0;
             listIngredient = new ObservableCollection<Ingredient>(); ;
         }
 
-        public Plat(string categorie, string nomPlat, float prixPlat, ObservableCollection<Ingredient> listIngredient)
+        public Plat(string categorie, string nomPlat, string image,  float prixPlat, ObservableCollection<Ingredient> listIngredient)
         {
             Categorie = categorie;
             NomPlat = nomPlat;
+            Image = image; 
             PrixPlat = prixPlat;
             this.listIngredient = listIngredient;
         }
