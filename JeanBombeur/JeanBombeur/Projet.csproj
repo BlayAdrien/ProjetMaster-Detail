@@ -157,5 +157,15 @@
       <Name>Metier</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\4 saisons.jpg" />
+    <Resource Include="Image\4fromages.jpg" />
+    <Resource Include="Image\BigMac.jpg" />
+    <Resource Include="Image\Hamburger.jpg" />
+    <Resource Include="Image\Hawaienne.jpg" />
+    <Resource Include="Image\logo2.jpeg" />
+    <Resource Include="Image\Margherita.jpg" />
+    <Resource Include="Image\reine.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
