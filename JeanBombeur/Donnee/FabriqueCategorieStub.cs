@@ -80,7 +80,7 @@ namespace Donnee
                  }
              ));
 
-            r.AjouterPlat(new Plat("Hamburger", "Fish", "/Image/Hamburger/Fish.jpg", 8,
+            r.AjouterPlat(new Plat("Hamburger", "Fish", "/Image/Hamburger/Fish.PNG", 8,
                  new ObservableCollection<Ingredient>
                  {
                     new Ingredient("Pain à burger", new Quantite(2, Unite.unité)),
@@ -91,7 +91,7 @@ namespace Donnee
                  }
              ));
 
-            r.AjouterPlat(new Plat("Hamburger", "Chicken", "/Image/Hamburger/Chicken.jpg", 8,
+            r.AjouterPlat(new Plat("Hamburger", "Chicken", "/Image/Hamburger/Chicken.PNG", 8,
                 new ObservableCollection<Ingredient>
                 {
                     new Ingredient("Pain à burger", new Quantite(2, Unite.unité)),
@@ -101,7 +101,7 @@ namespace Donnee
                 }
              ));
 
-            r.AjouterPlat(new Plat("Hamburger", "Bacon", "/Image/Hamburger/Fish.jpg", 8,
+            r.AjouterPlat(new Plat("Hamburger", "Bacon", "/Image/Hamburger/Bacon.PNG", 8,
                 new ObservableCollection<Ingredient>
                 {
                     new Ingredient("Pain à burger", new Quantite(2, Unite.unité)),

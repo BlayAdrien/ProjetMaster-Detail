@@ -142,7 +142,7 @@
     <Resource Include="Image\Logo\Pizza.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image\Logo\Sandwich.jpg" />
+    <Resource Include="Image\Logo\Sandwich%28logo%29.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Image\Logo\Ham.jpg" />
@@ -164,6 +164,19 @@
     <Resource Include="Image\Pizza\Hawaienne.jpg" />
     <Resource Include="Image\Pizza\Margherita.jpg" />
     <Resource Include="Image\Pizza\reine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Hamburger\Bacon.PNG" />
+    <Resource Include="Image\Hamburger\Chicken.PNG" />
+    <Resource Include="Image\Hamburger\Fish.PNG" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Image\Sandwh\Américain.PNG" />
+    <Resource Include="Image\Sandwh\Jambon.PNG" />
+    <Resource Include="Image\Sandwh\Poulet.PNG" />
+    <Resource Include="Image\Sandwh\Thon.PNG" />
+    <Resource Include="Image\Sandwh\Vegan.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
