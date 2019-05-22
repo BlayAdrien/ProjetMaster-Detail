@@ -16,3 +16,8 @@ U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csprojAssemb
 U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csproj.CoreCompileInputs.cache
 U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.dll
 U:\Cours\ProjetXAML\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.pdb
+C:\Users\YASSI\Desktop\Projet XAML\JeanBombeur\Metier\bin\Debug\Metier.dll
+C:\Users\YASSI\Desktop\Projet XAML\JeanBombeur\Metier\bin\Debug\Metier.pdb
+C:\Users\YASSI\Desktop\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csproj.CoreCompileInputs.cache
+C:\Users\YASSI\Desktop\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.dll
+C:\Users\YASSI\Desktop\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.pdb
