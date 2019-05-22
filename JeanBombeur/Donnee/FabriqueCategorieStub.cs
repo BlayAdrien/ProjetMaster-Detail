@@ -14,14 +14,14 @@ namespace Donnee
         {
             Restaurant r = new Restaurant();
 
-            r.AjouterPlat(new Plat("Pizza", "Reine", "/Image/reine.jpg" ,10,
+            r.AjouterPlat(new Plat("Pizza", "Reine", "/Image/Pizza/reine.jpg", 10,
                 new ObservableCollection<Ingredient>
                 {
                     new Ingredient("Coulis de tomates", new Quantite(100, Unite.g)),
                     new Ingredient("Jambon", new Quantite(543, Unite.g))
                 }
             ));
-            r.AjouterPlat(new Plat("Pizza", "Hawaienne", "/Image/Hawaienne.jpg", 12,
+            r.AjouterPlat(new Plat("Pizza", "Hawaienne", "/Image/Pizza/Hawaienne.jpg", 12,
                 new ObservableCollection<Ingredient>
                 {
                     new Ingredient("Coulis de tomates", new Quantite(100, Unite.g)),
@@ -30,16 +30,7 @@ namespace Donnee
 
                 }
             ));
-            r.AjouterPlat(new Plat("Pizza", "Hawaienne", "/Image/.jpg", 12,
-                new ObservableCollection<Ingredient>
-                {
-                    new Ingredient("Coulis de tomates", new Quantite(100, Unite.g)),
-                    new Ingredient("Jambon", new Quantite(543, Unite.g)),
-                    new Ingredient("Ananas", new Quantite(543, Unite.g))
-
-                }
-            ));
-            r.AjouterPlat(new Plat("Pizza", "Margherita", "/Image/Margherita.jpg", 6,
+             r.AjouterPlat(new Plat("Pizza", "Margherita", "/Image/Pizza/Margherita.jpg", 6,
                  new ObservableCollection<Ingredient>
                  {
                     new Ingredient("Coulis de tomates", new Quantite(100, Unite.g)),
@@ -48,7 +39,7 @@ namespace Donnee
                     new Ingredient("Basilic", new Quantite(543, Unite.g))
                  }
              ));
-            r.AjouterPlat(new Plat("Pizza", "4 fromages", "/Image/4fromages.jpg", 8,
+            r.AjouterPlat(new Plat("Pizza", "4 fromages", "/Image/Pizza/4fromages.jpg", 8,
                  new ObservableCollection<Ingredient>
                  {
                     new Ingredient("Coulis de tomates", new Quantite(100, Unite.g)),
@@ -58,7 +49,7 @@ namespace Donnee
                     new Ingredient("fromages de chèvre", new Quantite(160, Unite.g)),
                  }
              ));
-            r.AjouterPlat(new Plat("Pizza", "4 saisons", "/Image/4 saisons.jpg", 8,
+            r.AjouterPlat(new Plat("Pizza", "4 saisons", "/Image/Pizza/4 saisons.jpg", 8,
                  new ObservableCollection<Ingredient>
                  {
                     new Ingredient("Coulis de tomates", new Quantite(100, Unite.g)),
@@ -71,7 +62,7 @@ namespace Donnee
                  }
              ));
 
-            r.AjouterPlat(new Plat("Hamburger", "Big Mac", "/Image/BigMac.jpg", 8,
+            r.AjouterPlat(new Plat("Hamburger", "Big Mac", "/Image/Hamburger/BigMac.jpg", 8,
                  new ObservableCollection<Ingredient>
                  {
                     new Ingredient("Pain à burger", new Quantite(2, Unite.unité)),
