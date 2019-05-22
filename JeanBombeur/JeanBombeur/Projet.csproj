@@ -170,13 +170,12 @@
     <Resource Include="Image\Hamburger\Chicken.PNG" />
     <Resource Include="Image\Hamburger\Fish.PNG" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Resource Include="Image\Sandwh\Américain.PNG" />
-    <Resource Include="Image\Sandwh\Jambon.PNG" />
-    <Resource Include="Image\Sandwh\Poulet.PNG" />
-    <Resource Include="Image\Sandwh\Thon.PNG" />
-    <Resource Include="Image\Sandwh\Vegan.PNG" />
+    <Resource Include="Image\Sandwichs\Américain.PNG" />
+    <Resource Include="Image\Sandwichs\Jambon.PNG" />
+    <Resource Include="Image\Sandwichs\Poulet.PNG" />
+    <Resource Include="Image\Sandwichs\Thon.PNG" />
+    <Resource Include="Image\Sandwichs\Vegan.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

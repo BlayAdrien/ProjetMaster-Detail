@@ -4,46 +4,29 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.ComponentModel;
 namespace Metier
 {
     public class Restaurant 
     {
-
         
 
-        public List<Plat> ListPlat { get { return listPlat; } }
-        private List<Plat> listPlat = new List<Plat>();
+        public ObservableCollection<Plat> ListPlat { get { return listPlat; } }
+        private ObservableCollection<Plat> listPlat = new ObservableCollection<Plat>();
 
-        private string categorie; 
-        public string Categorie
-        {
-            get
-            {
-                if(categorie == "Pizza")
-                {
-                    return categorie;
-                }
-                return categorie;
-            }
-            set
-            {
-                if (value.Length > 50)
-                    categorie = value.Substring(0, 50);
-                else
-                    categorie = value;
-            }
-        }
+        ICollectionView view = CollectionViewSource.GetDefaultView(Plat);
 
-    public Restaurant(List<Plat> listPlat)
+        view.Filter = o => ((Plat) o).Categorie == "Pizza";
+        public Restaurant(ObservableCollection<Plat> listPlat)
         {
-            listPlat = new List<Plat>();
+            listPlat = new ObservableCollection<Plat>();
         }
 
         public Restaurant()
         {
-            listPlat = new List<Plat>();
+            listPlat = new ObservableCollection<Plat>();
         }
+
 
         public void AjouterPlat(Plat p)
         {

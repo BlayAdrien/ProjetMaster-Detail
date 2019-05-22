@@ -21,8 +21,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        <Viewbox>
-            <ContentControl Content="{Binding ElementName=listPlat, Path=ItemsSource}">
+         <ContentControl Content="{Binding ElementName=listPlat, Path=ItemsSource}">
             <ContentControl.ContentTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -53,7 +52,6 @@
                 </DataTemplate>
             </ContentControl.ContentTemplate>
         </ContentControl>
-        </Viewbox>
     </Grid>
    
 </Page>

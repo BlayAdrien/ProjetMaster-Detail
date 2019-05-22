@@ -8,6 +8,20 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Categorie">
 
+    <Page.Resources>
+        <Style x:Key="Choose" TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,0,0,250" />
+            <Setter Property="Panel.ZIndex" Value="1" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontFamily" Value="Verdana" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Grid.Row" Value="0" />
+            <Setter Property="Grid.Column" Value="1" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+    </Page.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -17,12 +31,13 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        
 
-        <TextBlock Grid.Row="0" Grid.Column="1" Text="Choisir une categorie" Margin="0,70,0,0" Panel.ZIndex="1" FontSize="20" FontFamily="Verdana" HorizontalAlignment="Center" Foreground="White"/>
+        <TextBlock Text="Choisir une categorie" Style="{StaticResource Choose}"/>
         <Button Click="Sandwich" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Margin="0,0,5,0">
             <Image Source="Image/Logo/Sandwich(logo).jpg" Grid.Column="0"  Stretch="UniformToFill"/>
         </Button>
-        <Button  Click="Hamburger"  VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Margin="0,0,5,0">
+        <Button  Click="Hamburger" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Margin="0,0,5,0">
             <Image Source="Image/Logo/Ham.jpg" Stretch="UniformToFill"/>
         </Button>
         <Button  Click="Pizza" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2">

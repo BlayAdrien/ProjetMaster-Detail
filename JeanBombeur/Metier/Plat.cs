@@ -18,8 +18,11 @@ namespace Metier
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-       // public List<Ingredient> ListIng { get { return listIng; } }
+        // public List<Ingredient> ListIng { get { return listIng; } }
         //private List<Ingredient> listIng = new List<Ingredient>();
+        public virtual string Filled { get; set; }
+
+
 
         private string nomPlat;
         public string NomPlat
