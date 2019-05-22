@@ -20,13 +20,13 @@
 
         <TextBlock Grid.Row="0" Grid.Column="1" Text="Choisir une categorie" Margin="0,70,0,0" Panel.ZIndex="1" FontSize="20" FontFamily="Verdana" HorizontalAlignment="Center" Foreground="White"/>
         <Button Click="Sandwich" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Margin="0,0,5,0">
-            <Image Source="Image/Sandwich.jpg" Grid.Column="0"  Stretch="UniformToFill"/>
+            <Image Source="Image/Logo/Sandwich.jpg" Grid.Column="0"  Stretch="UniformToFill"/>
         </Button>
         <Button  Click="Hamburger"  VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Margin="0,0,5,0">
-            <Image Source="Image/Ham.jpg" Stretch="UniformToFill"/>
+            <Image Source="Image/Logo/Ham.jpg" Stretch="UniformToFill"/>
         </Button>
         <Button  Click="Pizza" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2">
-            <Image Source="Image/Pizza.jpg" Stretch="Fill"/>
+            <Image Source="Image/Logo/Pizza.jpg" Stretch="Fill"/>
         </Button>
 
     </Grid>

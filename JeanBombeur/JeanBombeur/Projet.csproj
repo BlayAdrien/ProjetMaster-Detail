@@ -136,16 +136,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image\logo1.jpeg" />
+    <Resource Include="Image\Logo\logo1.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image\Pizza.jpg" />
+    <Resource Include="Image\Logo\Pizza.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image\Sandwich.jpg" />
+    <Resource Include="Image\Logo\Sandwich.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image\Ham.jpg" />
+    <Resource Include="Image\Logo\Ham.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Donnee\Donnee.csproj">
@@ -158,14 +158,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image\4 saisons.jpg" />
-    <Resource Include="Image\4fromages.jpg" />
-    <Resource Include="Image\BigMac.jpg" />
-    <Resource Include="Image\Hamburger.jpg" />
-    <Resource Include="Image\Hawaienne.jpg" />
-    <Resource Include="Image\logo2.jpeg" />
-    <Resource Include="Image\Margherita.jpg" />
-    <Resource Include="Image\reine.jpg" />
+    <Resource Include="Image\Pizza\4 saisons.jpg" />
+    <Resource Include="Image\Pizza\4fromages.jpg" />
+    <Resource Include="Image\Hamburger\BigMac.jpg" />
+    <Resource Include="Image\Pizza\Hawaienne.jpg" />
+    <Resource Include="Image\Pizza\Margherita.jpg" />
+    <Resource Include="Image\Pizza\reine.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

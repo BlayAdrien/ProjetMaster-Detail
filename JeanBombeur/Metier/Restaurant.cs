@@ -15,7 +15,27 @@ namespace Metier
         public List<Plat> ListPlat { get { return listPlat; } }
         private List<Plat> listPlat = new List<Plat>();
 
-        public Restaurant(List<Plat> listPlat)
+        private string categorie; 
+        public string Categorie
+        {
+            get
+            {
+                if(categorie == "Pizza")
+                {
+                    return categorie;
+                }
+                return categorie;
+            }
+            set
+            {
+                if (value.Length > 50)
+                    categorie = value.Substring(0, 50);
+                else
+                    categorie = value;
+            }
+        }
+
+    public Restaurant(List<Plat> listPlat)
         {
             listPlat = new List<Plat>();
         }
