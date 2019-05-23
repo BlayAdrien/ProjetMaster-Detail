@@ -6,57 +6,113 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Windows.Data;
-using static System.Console;
 
 namespace Metier
 {
     public class Restaurant
-    {/*
-        public ObservableCollection<Plat> ListPlat
+    {
+        private string nomResto;
+        public string NomResto
         {
             get
             {
-                IEnumerable<Plat> filtrer = listPlat.Where(p => p.Categorie.StartsWith("Pizza"));
-                foreach (Plat p in filtrer)
+                return nomResto;
+            }
+            set
+            {
+                if (value.Length > 50)
                 {
-                    WriteLine($"{p} ");
+                    nomResto = value.Substring(0, 50);
                 }
-                return listPlat;
+                else
+                {
+                    nomResto = value;
+                }
             }
         }
+
         private ObservableCollection<Plat> listPlat;
+        public ReadOnlyObservableCollection<Plat> ListPlat
+        {
+            get
+            {
+                return new ReadOnlyObservableCollection<Plat>(listPlat);
+            }
+        }
+
+        public IEnumerable<Plat> filtrerPizza => ListPlat.Where(p => p.Categorie.StartsWith("Pizza"));
+        public IEnumerable<Plat> filtrerSandwich => ListPlat.Where(p => p.Categorie.StartsWith("Sandwich"));
+        public IEnumerable<Plat> filtrerHamburger => ListPlat.Where(p => p.Categorie.StartsWith("Hamburger"));
+
+
+        public IEnumerable<Plat> ListPlatFiltre(string filter, string Ordered)
+        {
+
+            IEnumerable<Plat> list;
+
+            if (filter == "Pizza")
+            {
+                list = filtrerPizza;
+            }
+            else if (filter == "Hamburger")
+            {
+                list = filtrerHamburger;
+            }
+            else
+            {
+                list = filtrerSandwich;
+            }
+            return list;
+        }
+
         public Restaurant()
         {
             listPlat = new ObservableCollection<Plat>();
         }
 
-        public void AjouterPlat(Plat p)
+        public Restaurant(string nomResto)
         {
-            listPlat.Add(p);
-
-        }*/
-        public ObservableCollection<Plat> ListPlat { get { return listPlat; } }
-        private ObservableCollection<Plat> listPlat = new ObservableCollection<Plat>();
-
-
-        public Restaurant(ObservableCollection<Plat> listPlat)
-        {
-            listPlat = new ObservableCollection<Plat>();
+            this.nomResto = nomResto;
         }
-
-        public Restaurant()
-        {
-            listPlat = new ObservableCollection<Plat>();
-        }
-
 
         public void AjouterPlat(Plat p)
         {
             listPlat.Add(p);
+        }
 
+        public override bool Equals(object other)
+        {
+            if (object.ReferenceEquals(other, null))
+            {
+                return false;
+            }
+
+            if (object.ReferenceEquals(this, other))
+            {
+                return true;
+            }
+
+            if (this.GetType() != other.GetType())
+            {
+                return false;
+            }
+
+            return this.Equals(other as Restaurant);
+        }
+
+        public override int GetHashCode()
+        {
+            var hashCode = -1063372659;
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(nomResto);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(NomResto);
+            hashCode = hashCode * -1521134295 + EqualityComparer<ObservableCollection<Plat>>.Default.GetHashCode(listPlat);
+            hashCode = hashCode * -1521134295 + EqualityComparer<ReadOnlyObservableCollection<Plat>>.Default.GetHashCode(ListPlat);
+            hashCode = hashCode * -1521134295 + EqualityComparer<IEnumerable<Plat>>.Default.GetHashCode(filtrerPizza);
+            hashCode = hashCode * -1521134295 + EqualityComparer<IEnumerable<Plat>>.Default.GetHashCode(filtrerSandwich);
+            hashCode = hashCode * -1521134295 + EqualityComparer<IEnumerable<Plat>>.Default.GetHashCode(filtrerHamburger);
+            return hashCode;
         }
     }
-
 }
 
 

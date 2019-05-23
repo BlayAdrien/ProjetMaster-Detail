@@ -48,5 +48,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Donnee\Donnee.csproj">
+      <Project>{9bbcdbb4-ed27-47e7-982c-2261591fc0d5}</Project>
+      <Name>Donnee</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Metier\Metier.csproj">
+      <Project>{5f4d3d88-4da9-4c44-8770-4bdcd4d144b0}</Project>
+      <Name>Metier</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

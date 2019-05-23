@@ -34,13 +34,13 @@
         
 
         <TextBlock Text="Choisir une categorie" Style="{StaticResource Choose}"/>
-        <Button Click="Sandwich" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Margin="0,0,5,0">
+        <Button Click="Filtrage" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Margin="0,0,5,0" x:Name="Sandwich">
             <Image Source="Image/Logo/Sandwich(logo).jpg" Grid.Column="0"  Stretch="UniformToFill"/>
         </Button>
-        <Button  Click="Hamburger" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Margin="0,0,5,0">
+        <Button  Click="Filtrage" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Margin="0,0,5,0" x:Name="Hamburger">
             <Image Source="Image/Logo/Ham.jpg" Stretch="UniformToFill"/>
         </Button>
-        <Button  Click="Pizza" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2">
+        <Button  Click="Filtrage" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" x:Name="Pizza">
             <Image Source="Image/Logo/Pizza.jpg" Stretch="Fill"/>
         </Button>
 
