@@ -21,14 +21,11 @@ namespace JeanBombeur
     /// </summary>
     public partial class Hamburger : Page
     {
-        public Restaurant Restaurant { get; private set; } = App.Restaurant;
         public Hamburger()
         {
             InitializeComponent();
-            listPlat.DataContext = Restaurant;
-            DataContext = this;
         }
-
+        
         private void Accueil(object sender, RoutedEventArgs e)
         {
             Categorie c = new Categorie();

@@ -20,7 +20,7 @@ namespace Metier
 
         // public List<Ingredient> ListIng { get { return listIng; } }
         //private List<Ingredient> listIng = new List<Ingredient>();
-        public virtual string Filled { get; set; }
+        
 
 
 

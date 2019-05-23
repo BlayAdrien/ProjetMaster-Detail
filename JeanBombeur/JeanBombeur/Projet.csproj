@@ -66,6 +66,9 @@
     <Compile Include="Hambuger.xaml.cs">
       <DependentUpon>Hambuger.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UC_TypePlat.xaml.cs">
+      <DependentUpon>UC_TypePlat.xaml</DependentUpon>
+    </Compile>
     <Page Include="Accueil.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -105,6 +108,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Hambuger.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UC_TypePlat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

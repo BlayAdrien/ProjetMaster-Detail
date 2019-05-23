@@ -21,13 +21,10 @@ namespace JeanBombeur
     /// </summary>
     public partial class Pizza : Page
     {
-        public Restaurant Restaurant { get; private set; } = App.Restaurant;
 
         public Pizza()
         {
             InitializeComponent();
-            listPlat.DataContext = Restaurant;
-            DataContext = this;
         }
 
         private void Accueil(object sender, RoutedEventArgs e)
