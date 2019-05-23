@@ -6,43 +6,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Windows.Data;
+using static System.Console;
 
 namespace Metier
 {
     public class Restaurant
     {/*
-        public ObservableCollection<Plat> ListPlat { get; private set; }
-
-        public CollectionView PlatView { get; private set; }
-        public Restaurant(IList<Plat> listPlat)
+        public ObservableCollection<Plat> ListPlat
         {
-            ListPlat = new ObservableCollection<Plat>(listPlat);
-
-
-            InitialiseViews();
-        }
-
-        private void InitialiseViews()
-        {
-
-            InitialiseProductOptionsView();
-        }
-
-        private void InitialiseProductOptionsView()
-        {
-            ProductOptionsView = CollectionViewSource.GetDefaultView(ProductOptions);
-            ProductOptionsView.SortDescriptions.Add(
-                new SortDescription("Option", ListSortDirection.Ascending));
-        }
-        public Plat SelectedPlat
-        {
-            set
+            get
             {
-                if (value != null)
+                IEnumerable<Plat> filtrer = listPlat.Where(p => p.Categorie.StartsWith("Pizza"));
+                foreach (Plat p in filtrer)
                 {
-                    ProductOptionsView.Filter = o => ((ProductOption)o).ProductCode == value.Code;
+                    WriteLine($"{p} ");
                 }
+                return listPlat;
             }
+        }
+        private ObservableCollection<Plat> listPlat;
+        public Restaurant()
+        {
+            listPlat = new ObservableCollection<Plat>();
+        }
+
+        public void AjouterPlat(Plat p)
+        {
+            listPlat.Add(p);
 
         }*/
         public ObservableCollection<Plat> ListPlat { get { return listPlat; } }

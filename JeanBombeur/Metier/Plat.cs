@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Metier
 {
-    public class Plat : INotifyPropertyChanged
+    public class Plat : INotifyPropertyChanged , IEquatable<Plat>
     {
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -20,7 +20,11 @@ namespace Metier
 
         // public List<Ingredient> ListIng { get { return listIng; } }
         //private List<Ingredient> listIng = new List<Ingredient>();
-        
+
+        public override int GetHashCode()
+        {
+            return NomPlat.GetHashCode();
+        }
 
 
 
@@ -104,6 +108,32 @@ namespace Metier
         public void AjouterIngredient(Ingredient i)
         {
             listIngredient.Add(i);
+        }
+
+        public override bool Equals(object obj)
+        {
+            //check null
+            if (object.ReferenceEquals(obj, null))
+            {
+                return false;
+            }
+
+            if (object.ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (this.GetType() != obj.GetType())
+            {
+                return false;
+            }
+
+            return this.Equals(obj as Plat);
+        }
+
+        public bool Equals(Plat plat)
+        {
+            return (this.NomPlat.Equals(plat.NomPlat) && this.Categorie == plat.Categorie);
         }
     }
 }
