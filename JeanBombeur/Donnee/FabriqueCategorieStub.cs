@@ -14,7 +14,7 @@ namespace Donnee
         {
             Restaurant r = new Restaurant();
 
-            r.AjouterPlat(new Plat("Pizza", "Reine", "/Image/Pizza/reine.jpg", 10,
+            r.AjouterPlat(new Plat("Pizza", "Reine", "/Image/Pizza/reine.jpg", 8,
                 new ObservableCollection<Ingredient>
                 {
                     new Ingredient("Coulis de tomates", new Quantite(100, Unite.g)),
@@ -24,7 +24,7 @@ namespace Donnee
                 }
             ));
 
-            r.AjouterPlat(new Plat("Pizza", "Hawaienne", "/Image/Pizza/Hawaienne.jpg", 12,
+            r.AjouterPlat(new Plat("Pizza", "Hawaienne", "/Image/Pizza/Hawaienne.jpg", 10,
                 new ObservableCollection<Ingredient>
                 {
                     new Ingredient("Coulis de tomates", new Quantite(150, Unite.g)),
@@ -44,7 +44,7 @@ namespace Donnee
                  }
              ));
 
-            r.AjouterPlat(new Plat("Pizza", "4 fromages", "/Image/Pizza/4fromages.jpg", 8,
+            r.AjouterPlat(new Plat("Pizza", "4 fromages", "/Image/Pizza/4fromages.jpg",11,
                  new ObservableCollection<Ingredient>
                  {
                     new Ingredient("Coulis de tomates", new Quantite(100, Unite.g)),
@@ -68,7 +68,7 @@ namespace Donnee
                  }
              ));
 
-            r.AjouterPlat(new Plat("Hamburger", "Big Mac", "/Image/Hamburger/BigMac.jpg", 8,
+            r.AjouterPlat(new Plat("Hamburger", "Big Mac", "/Image/Hamburger/BigMac.jpg", 6,
                  new ObservableCollection<Ingredient>
                  {
                     new Ingredient("Pain à burger", new Quantite(2, Unite.unité)),
@@ -80,7 +80,7 @@ namespace Donnee
                  }
              ));
 
-            r.AjouterPlat(new Plat("Hamburger", "Fish", "/Image/Hamburger/Fish.PNG", 8,
+            r.AjouterPlat(new Plat("Hamburger", "Fish", "/Image/Hamburger/Fish.PNG", 7,
                  new ObservableCollection<Ingredient>
                  {
                     new Ingredient("Pain à burger", new Quantite(2, Unite.unité)),
@@ -91,7 +91,7 @@ namespace Donnee
                  }
              ));
 
-            r.AjouterPlat(new Plat("Hamburger", "Chicken", "/Image/Hamburger/Chicken.PNG", 8,
+            r.AjouterPlat(new Plat("Hamburger", "Chicken", "/Image/Hamburger/Chicken.PNG", 7,
                 new ObservableCollection<Ingredient>
                 {
                     new Ingredient("Pain à burger", new Quantite(2, Unite.unité)),
@@ -112,6 +112,67 @@ namespace Donnee
                     new Ingredient("Oignons", new Quantite(1, Unite.unité)),
                 }
             ));
+
+            r.AjouterPlat(new Plat("Sandwich", "Thon", "/Image/Sandwichs/Thon.PNG", 7,
+                new ObservableCollection<Ingredient>
+                {
+                    new Ingredient("Demi Baguette", new Quantite(1, Unite.unité)),
+                    new Ingredient("Petite boîte de thon au naturel", new Quantite(1, Unite.unité)),
+                    new Ingredient("Oignons", new Quantite(1, Unite.unité)),
+                    new Ingredient("Comcombre", new Quantite(1, Unite.unité)),
+                    new Ingredient("Tomate", new Quantite(1, Unite.unité)),
+                    new Ingredient("Feuilles de laitue", new Quantite(3, Unite.unité)),
+                }
+            ));
+
+            r.AjouterPlat(new Plat("Sandwich", "Jambon Beurre", "/Image/Sandwichs/Jambon.PNG", 6,
+              new ObservableCollection<Ingredient>
+              {
+                    new Ingredient("Demi Baguette", new Quantite(1, Unite.unité)),
+                    new Ingredient("Tranche de jambon blanc", new Quantite(1, Unite.unité)),
+                    new Ingredient("Noix de beurre", new Quantite(1, Unite.unité)),
+                    new Ingredient("Oignons", new Quantite(1, Unite.unité)),
+                    new Ingredient("Comcombre", new Quantite(1, Unite.unité)),
+                    new Ingredient("Tomate", new Quantite(1, Unite.unité)),
+                    new Ingredient("Feuilles de laitue", new Quantite(3, Unite.unité)),
+              }
+            ));
+
+            r.AjouterPlat(new Plat("Sandwich", "Poulet", "/Image/Sandwichs/Poulet.PNG", 8,
+              new ObservableCollection<Ingredient>
+              {
+                    new Ingredient("Demi Baguette", new Quantite(1, Unite.unité)),
+                    new Ingredient("Escalopes grillées de poulet", new Quantite(2, Unite.unité)),
+                    new Ingredient("Oignons", new Quantite(1, Unite.unité)),
+                    new Ingredient("Comcombre", new Quantite(1, Unite.unité)),
+                    new Ingredient("Tomate", new Quantite(1, Unite.unité)),
+                    new Ingredient("Feuilles de laitue", new Quantite(3, Unite.unité)),
+              }
+          ));
+
+            r.AjouterPlat(new Plat("Sandwich", "Vegan", "/Image/Sandwichs/Vegan.PNG", 8,
+              new ObservableCollection<Ingredient>
+              {
+                    new Ingredient("Demi Baguette", new Quantite(1, Unite.unité)),
+                    new Ingredient("Oignons", new Quantite(1, Unite.unité)),
+                    new Ingredient("Comcombre", new Quantite(1, Unite.unité)),
+                    new Ingredient("Tomate", new Quantite(1, Unite.unité)),
+                    new Ingredient("Feuilles de laitue", new Quantite(3, Unite.unité)),
+              }
+          ));
+
+            r.AjouterPlat(new Plat("Sandwich", "Américain", "/Image/Sandwichs/Américain.PNG", 8,
+              new ObservableCollection<Ingredient>
+              {
+                    new Ingredient("Demi Baguette", new Quantite(1, Unite.unité)),
+                    new Ingredient("Tranches de cheddar", new Quantite(4, Unite.unité)),
+                    new Ingredient("Steaks hachés", new Quantite(2, Unite.unité)),
+                    new Ingredient("Oignons", new Quantite(1, Unite.unité)),
+                    new Ingredient("Comcombre", new Quantite(1, Unite.unité)),
+                    new Ingredient("Tomate", new Quantite(1, Unite.unité)),
+                    new Ingredient("Feuilles de laitue", new Quantite(3, Unite.unité)),
+              }
+          ));
 
 
             return r;

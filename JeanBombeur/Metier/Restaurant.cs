@@ -10,7 +10,7 @@ using System.Windows.Data;
 namespace Metier
 {
     public class Restaurant
-    {
+    {/*
         public ObservableCollection<Plat> ListPlat { get; private set; }
 
         public CollectionView PlatView { get; private set; }
@@ -44,24 +44,11 @@ namespace Metier
                 }
             }
 
-        }
-
-    }
-}
-
-
-
-
-
-
-
-
-
-/*
+        }*/
         public ObservableCollection<Plat> ListPlat { get { return listPlat; } }
         private ObservableCollection<Plat> listPlat = new ObservableCollection<Plat>();
 
-        
+
         public Restaurant(ObservableCollection<Plat> listPlat)
         {
             listPlat = new ObservableCollection<Plat>();
@@ -78,5 +65,19 @@ namespace Metier
             listPlat.Add(p);
 
         }
-    }*/
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
