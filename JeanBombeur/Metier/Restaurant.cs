@@ -11,6 +11,22 @@ namespace Metier
 {
     public class Restaurant
     {
+
+        private Restaurant selection;
+
+        public Restaurant Selection
+        {
+            get
+            {
+                return selection;
+            }
+            set
+            {
+                selection = value;
+            }
+        }
+
+
         private string nomResto;
         public string NomResto
         {
@@ -45,7 +61,7 @@ namespace Metier
         public IEnumerable<Plat> filtrerHamburger => ListPlat.Where(p => p.Categorie.StartsWith("Hamburger"));
 
 
-        public IEnumerable<Plat> ListPlatFiltre(string filter, string Ordered)
+        public IEnumerable<Plat> ListPlatFiltre(string filter)
         {
 
             IEnumerable<Plat> list;
