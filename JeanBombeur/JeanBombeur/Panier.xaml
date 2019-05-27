@@ -10,8 +10,8 @@
 
     <Grid Background="White">
         <StackPanel>
-            
+            <TextBlock Text="Panier" HorizontalAlignment="Center" FontSize="23"/>
         </StackPanel>
-        
+        <Button Content="Ajouter un plat" Click="Categorie" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
     </Grid>
 </Page>

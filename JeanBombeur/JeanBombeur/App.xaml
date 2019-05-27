@@ -28,7 +28,7 @@
 
         </Style>
         <Style x:Key="FontFamily">
-            <Setter Property="TextElement.FontFamily" Value="Font/Blacksword.otf" />
+            <Setter Property="TextElement.FontFamily" Value="/Font/Blacksword.otf" />
         </Style>
 
 

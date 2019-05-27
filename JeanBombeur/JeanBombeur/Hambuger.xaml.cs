@@ -31,5 +31,10 @@ namespace JeanBombeur
             Categorie c = new Categorie();
             this.NavigationService.Navigate(c);
         }
+        private void Panier(object sender, RoutedEventArgs e)
+        {
+            Panier pa = new Panier();
+            this.NavigationService.Navigate(pa);
+        }
     }
 }

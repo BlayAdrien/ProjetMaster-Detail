@@ -30,4 +30,5 @@ namespace JeanBombeur
             DataContext = this;
         }
     }
+    
 }

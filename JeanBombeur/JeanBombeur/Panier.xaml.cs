@@ -24,5 +24,11 @@ namespace JeanBombeur
         {
             InitializeComponent();
         }
+
+        private void Categorie(object sender, RoutedEventArgs e)
+        {
+            Categorie c = new Categorie();
+            this.NavigationService.Navigate(c);
+        }
     }
 }
