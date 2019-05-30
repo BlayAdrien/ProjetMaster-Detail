@@ -21,3 +21,9 @@ C:\Users\YASSI\Desktop\Projet XAML\JeanBombeur\Metier\bin\Debug\Metier.pdb
 C:\Users\YASSI\Desktop\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csproj.CoreCompileInputs.cache
 C:\Users\YASSI\Desktop\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.dll
 C:\Users\YASSI\Desktop\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.pdb
+C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\bin\Debug\Metier.dll
+C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\bin\Debug\Metier.pdb
+C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\obj\Debug\Metier.csprojResolveAssemblyReference.cache
+C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\obj\Debug\Metier.csproj.CoreCompileInputs.cache
+C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\obj\Debug\Metier.dll
+C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\obj\Debug\Metier.pdb

@@ -16,9 +16,11 @@
             <Setter Property="FontFamily" Value="Verdana" />
             <Setter Property="Foreground" Value="White" />
             <Setter Property="Height" Value="50" />
-            <Setter Property="Grid.Row" Value="0" />
-            <Setter Property="Grid.Column" Value="1" />
             <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="Bouton" TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
     </Page.Resources>
 
@@ -33,14 +35,14 @@
         </Grid.ColumnDefinitions>
         
 
-        <TextBlock Text="Choisir une categorie" Style="{StaticResource Choose}"/>
-        <Button Click="Sandwich" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" Margin="0,0,5,0">
+        <TextBlock Text="Choisir une categorie" Style="{StaticResource Choose}" Grid.Row="0" Grid.Column="1"/>
+        <Button Click="Sandwich" Grid.Column="0" Margin="0,0,5,0">
             <Image Source="Image/Logo/Sandwich(logo).jpg" Grid.Column="0"  Stretch="UniformToFill"/>
         </Button>
-        <Button  Click="Hamburger" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="1" Margin="0,0,5,0">
+        <Button  Click="Hamburger" Grid.Column="1" Margin="0,0,5,0">
             <Image Source="Image/Logo/Ham.jpg" Stretch="UniformToFill"/>
         </Button>
-        <Button  Click="Pizza" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" >
+        <Button  Click="Pizza" Grid.Column="2" >
             <Image Source="Image/Logo/Pizza.jpg" Stretch="Fill"/>
         </Button>
 

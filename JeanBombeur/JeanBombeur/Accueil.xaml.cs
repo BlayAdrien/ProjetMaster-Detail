@@ -20,7 +20,6 @@ namespace JeanBombeur
     public partial class Accueil : Page
     {
         MainWindow window;
-        DispatcherTimer dt = new DispatcherTimer();
 
         public Accueil()
         {
@@ -34,18 +33,7 @@ namespace JeanBombeur
         
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
-            dt.Tick += dt_Tick;
-            dt.Interval = TimeSpan.FromMilliseconds(10);
-            dt.Start();
-            if (mProgressBar.Value == mProgressBar.Maximum)
-            {
                 window.PageFrame.Navigate(new Categorie());
-            }
-        }
-
-        void dt_Tick(object sender, EventArgs e)
-        {
-            mProgressBar.Value++;
         }
     }
 }
