@@ -56,6 +56,14 @@ namespace Metier
             this.quantite = quantite;
         }
 
+        public Ingredient()
+        {
+            nomIngredient = "default";
+            quantite = new Quantite();
+
+        }
+
+
         public override string ToString()
         {
             return quantite.ToString() + " " + nomIngredient + "\n";

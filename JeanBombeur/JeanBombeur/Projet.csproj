@@ -54,6 +54,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AjoutIngredient.xaml.cs">
+      <DependentUpon>AjoutIngredient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutPlat.xaml.cs">
+      <DependentUpon>AjoutPlat.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Panier.xaml.cs">
       <DependentUpon>Panier.xaml</DependentUpon>
     </Compile>
@@ -70,6 +76,14 @@
       <DependentUpon>UC_TypePlat.xaml</DependentUpon>
     </Compile>
     <Page Include="Accueil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AjoutIngredient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AjoutPlat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,44 @@
+﻿<Window x:Class="JeanBombeur.AjoutPlat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JeanBombeur"
+        mc:Ignorable="d"
+        Title="AjoutPlat" Height="600" Width="400">
+    <Grid x:Name="ajoutPlat">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox Grid.Row="0" Grid.ColumnSpan="2" Text="{Binding NomPlat}" HorizontalContentAlignment="Center"/>
+        
+        <Button x:Name="Image" Grid.ColumnSpan="2" Grid.Row="1" Click="AjoutImage">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="{Binding Image}"/>
+            </Button.Background>
+            <Button.Content>
+                <StackPanel Width="{Binding ActualWidth, ElementName=AjoutImage}">
+                    <TextBlock Text="Ajouter une image"/>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2">
+            <ListView x:Name="AjoutIng"></ListView>
+            <Button Content="+" DockPanel.Dock="Bottom" Click="AjoutIngredient"/>
+
+        </StackPanel>
+
+        <Button  Grid.Row="3" VerticalAlignment="Bottom" Content="Annuler" Click="Annuler"/>
+        <Button  Grid.Row="3" Grid.Column="1" VerticalAlignment="Bottom" Content="Valider" Click="Valider"/>
+
+    </Grid>
+</Window>

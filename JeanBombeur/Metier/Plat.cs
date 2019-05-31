@@ -110,6 +110,11 @@ namespace Metier
             listIngredient.Add(i);
         }
 
+        public bool SupprimerIngredient(Ingredient i)
+        {
+            return (listIngredient.Remove(i));
+        }
+
         public override bool Equals(object obj)
         {
             //check null

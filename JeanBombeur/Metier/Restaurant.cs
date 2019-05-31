@@ -11,7 +11,7 @@ namespace Metier
 {
     public class Restaurant
     {
-
+        /*
         private Restaurant selection;
 
         public Restaurant Selection
@@ -26,7 +26,7 @@ namespace Metier
             }
         }
 
-
+    */
         private string nomResto;
         public string NomResto
         {
@@ -54,6 +54,11 @@ namespace Metier
             {
                 return new ReadOnlyObservableCollection<Plat>(listPlat);
             }
+        }
+
+        public void ValiderPlat(Plat p)
+        {
+            listPlat.Add(p);
         }
 
         public IEnumerable<Plat> filtrerPizza => ListPlat.Where(p => p.Categorie.StartsWith("Pizza"));
