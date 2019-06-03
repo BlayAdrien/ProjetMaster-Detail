@@ -27,7 +27,7 @@
             <Setter Property="Width" Value="200"/>
 
         </Style>
-        <Style x:Key="FontFamily">
+        <Style x:Key="FontFamily" TargetType="TextBlock">
             <Setter Property="TextElement.FontFamily" Value="/Font/Blacksword.otf" />
         </Style>
 

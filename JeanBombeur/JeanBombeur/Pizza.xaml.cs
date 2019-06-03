@@ -37,5 +37,11 @@ namespace JeanBombeur
             Panier pa = new Panier();
             this.NavigationService.Navigate(pa);
         }
+
+        private void AjoutPlat(object sender, RoutedEventArgs e)
+        {
+            Window ajoutPlat = new AjoutPlat();
+            ajoutPlat.Show();
+        }
     }
 }

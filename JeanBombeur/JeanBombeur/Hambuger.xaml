@@ -11,5 +11,7 @@
         <local:UC_TypePlat/>
         <Button Content="Accueil" Click="Accueil" HorizontalAlignment="Right" VerticalAlignment="Top"/>
         <Button Content="Ajouter au panier" Click="Panier" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Button Content="Ajouter un plat" Click="AjoutPlat" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+
     </Grid>
 </Page>

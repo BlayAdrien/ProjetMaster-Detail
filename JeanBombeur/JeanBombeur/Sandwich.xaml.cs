@@ -42,6 +42,7 @@ namespace JeanBombeur
             Window ajoutPlat = new AjoutPlat();
             ajoutPlat.Show();
         }
+
     }
 }
 

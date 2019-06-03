@@ -36,13 +36,13 @@
         
 
         <TextBlock Text="Choisir une categorie" Style="{StaticResource Choose}" Grid.Row="0" Grid.Column="1"/>
-        <Button Click="Sandwich" Grid.Column="0" Margin="0,0,5,0">
+        <Button Click="Sandwich" Grid.Column="0" Margin="0,0,5,0" Style="{StaticResource Bouton}">
             <Image Source="Image/Logo/Sandwich(logo).jpg" Grid.Column="0"  Stretch="UniformToFill"/>
         </Button>
-        <Button  Click="Hamburger" Grid.Column="1" Margin="0,0,5,0">
+        <Button  Click="Hamburger" Grid.Column="1" Margin="0,0,5,0" Style="{StaticResource Bouton}">
             <Image Source="Image/Logo/Ham.jpg" Stretch="UniformToFill"/>
         </Button>
-        <Button  Click="Pizza" Grid.Column="2" >
+        <Button  Click="Pizza" Grid.Column="2" Style="{StaticResource Bouton}">
             <Image Source="Image/Logo/Pizza.jpg" Stretch="Fill"/>
         </Button>
 
