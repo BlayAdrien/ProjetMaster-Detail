@@ -9,8 +9,12 @@ using System.Threading.Tasks;
 
 namespace Metier
 {
+    
+
     public class Plat : INotifyPropertyChanged , IEquatable<Plat>
     {
+
+     //   private Dictionary<string, float> dico; 
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -52,7 +56,24 @@ namespace Metier
                     value = 0;
                 }
                 prixPlat = value;
+                OnPropertyChanged("PrixPlat");
             }
+        }
+
+        private string taille; 
+        public string Taille
+        {
+            get { return taille; }
+            set
+            {
+                if (value.Length > 50)
+                {
+                    taille = value.Substring(0,50);
+                }
+                taille = value;               
+                OnPropertyChanged("Taille");
+            }
+
         }
 
         private string categorie; 
@@ -93,14 +114,16 @@ namespace Metier
             NomPlat = "default";
             Image = image;
             PrixPlat = 0;
+            Taille = "default"; 
             listIngredient = new ObservableCollection<Ingredient>(); ;
         }
 
-        public Plat(string categorie, string nomPlat, string image,  float prixPlat, ObservableCollection<Ingredient> listIngredient)
+        public Plat(string categorie, string nomPlat, string image, string taille, float prixPlat, ObservableCollection<Ingredient> listIngredient)
         {
             Categorie = categorie;
             NomPlat = nomPlat;
-            Image = image; 
+            Image = image;
+            Taille = taille;
             PrixPlat = prixPlat;
             this.listIngredient = listIngredient;
         }

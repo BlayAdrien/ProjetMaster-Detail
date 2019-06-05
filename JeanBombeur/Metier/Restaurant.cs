@@ -11,22 +11,8 @@ namespace Metier
 {
     public class Restaurant
     {
-        /*
-        private Restaurant selection;
 
-        public Restaurant Selection
-        {
-            get
-            {
-                return selection;
-            }
-            set
-            {
-                selection = value;
-            }
-        }
 
-    */
         private string nomResto;
         public string NomResto
         {
