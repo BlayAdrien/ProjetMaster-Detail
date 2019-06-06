@@ -12,7 +12,7 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="{Binding TaillePlat, ElementName=root}"/>
-        <TextBlock Text="{Binding PrixPlat, ElementName=root}" Grid.Row="1"/>
+        <TextBlock Text="{Binding TaillePlat}"/>
+        <TextBlock Text="{Binding PrixPlat}" Grid.Row="1"/>
     </Grid>
 </UserControl>

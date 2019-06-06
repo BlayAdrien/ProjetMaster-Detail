@@ -23,6 +23,18 @@ namespace JeanBombeur
     {
         public Restaurant Restaurant { get; private set; } = App.Restaurant;
 
+        private ListView listViewResto; 
+        public ListView ListViewResto
+        {
+            get
+            {
+                return listViewResto;
+            }
+            set
+            {
+                listViewResto = value;
+            }
+        }
         public UC_TypePlat()
         {
             InitializeComponent();

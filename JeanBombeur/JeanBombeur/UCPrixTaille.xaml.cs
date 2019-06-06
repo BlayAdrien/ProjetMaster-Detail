@@ -21,33 +21,27 @@ namespace JeanBombeur
     /// </summary>
     public partial class UCPrixTaille : UserControl
     {
+        
         public UCPrixTaille()
         {
             InitializeComponent();
+            DataContext = this;
         }
 
-        public static readonly DependencyProperty Taille;
-        public static readonly DependencyProperty Prix;
+        public static readonly DependencyProperty Taille = DependencyProperty.Register("Taille", typeof(string), typeof(UCPrixTaille), new PropertyMetadata());
+        public static readonly DependencyProperty Prix = DependencyProperty.Register("PrixPlat",typeof(float), typeof(UCPrixTaille), new PropertyMetadata());
 
-        static UCPrixTaille()
-        {
-            UCPrixTaille.Taille = DependencyProperty.Register("Taille",
-                typeof(string), typeof(UCPrixTaille),
-                new PropertyMetadata("Default"));
-            UCPrixTaille.Prix = DependencyProperty.Register("PrixPlat",
-                typeof(float), typeof(UCPrixTaille),
-                new PropertyMetadata("PrixPlat"));
-        }
+        
 
         public string TaillePlat
         {
             get
             {
-                return GetValue(UCPrixTaille.Taille) as string;
+                return GetValue(Taille) as string;
             }
             set
             {
-                SetValue(UCPrixTaille.Taille, value);
+                SetValue(Taille, value);
             }
         }
 
@@ -55,11 +49,11 @@ namespace JeanBombeur
         {
             get
             {
-                return (float)GetValue(UCPrixTaille.Prix);
+                return (float)GetValue(Prix);
             }
             set
             {
-                SetValue(UCPrixTaille.Prix, value);
+                SetValue(Prix, value);
             }
         }
     }
