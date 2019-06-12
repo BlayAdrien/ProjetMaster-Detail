@@ -7,10 +7,10 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Pizza">
+<!--    <Page.Background>
+        <ImageBrush ImageSource="/Image/Logo/Background.jpg" Stretch="UniformToFill" /> 
+    </Page.Background> -->
 
-    <Page.Background>
-        <ImageBrush ImageSource="/Image/Logo/Background.jpg" Stretch="UniformToFill" />
-    </Page.Background>
 
 
     <Grid>
