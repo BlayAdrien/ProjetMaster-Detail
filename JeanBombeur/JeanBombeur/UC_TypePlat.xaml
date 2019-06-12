@@ -8,13 +8,10 @@
              mc:Ignorable="d" 
             d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <ListView DockPanel.Dock="Left" x:Name="listPlat" HorizontalAlignment="Left"
-                  IsSynchronizedWithCurrentItem="True" 
-                  ItemsSource="{Binding ListPlat}"
-                  >
+        <ListView DockPanel.Dock="Left" x:Name="listPlat" HorizontalAlignment="Left" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding ListPlat}" HorizontalContentAlignment="Stretch" >
             <ListView.ItemTemplate >
-                <DataTemplate>
-                    <TextBlock Text="{Binding NomPlat}" />
+                <DataTemplate >
+                    <Label Content="{Binding NomPlat}"  />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
@@ -38,9 +35,9 @@
                             </Grid.ColumnDefinitions>
                             <TextBlock Foreground="Black" Text="{Binding NomPlat}" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource Titre}"  />
                             <Image  Source="{Binding Image}" Grid.Column="0" Grid.Row="1" Style="{StaticResource Image}"/>
-                            <StackPanel Grid.Column="1" Grid.Row="1">
+                          <!--  <StackPanel Grid.Column="1" Grid.Row="1">
                                 <local:UCPrixTaille PrixPlat="{Binding PrixPlat}" TaillePlat="{Binding Taille}"/>
-                            </StackPanel>
+                            </StackPanel> -->
                                 
                             
                             <TextBlock x:Name="Ecriture"  Text="Ingredient" Grid.ColumnSpan="2" HorizontalAlignment="Center" Grid.Row="2" FontFamily="Verdana" FontSize="25"/>

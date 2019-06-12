@@ -14,7 +14,7 @@
 
     <Grid>
         <StackPanel VerticalAlignment="Bottom">
-            <Button Content="Lancer l'opération" Height="30" Click="Button_Click1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,85"/>
+            <Button Content="Lancer l'application" Height="30" Click="Button_Click1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,85"/>
         </StackPanel>
     </Grid>
 </Page>

@@ -38,7 +38,9 @@ namespace JeanBombeur
         public UC_TypePlat()
         {
             InitializeComponent();
+          //  listPlat.ItemsSource = Restaurant.Where()
             listPlat.DataContext = Restaurant;
+  
             DataContext = this;
         }
 
