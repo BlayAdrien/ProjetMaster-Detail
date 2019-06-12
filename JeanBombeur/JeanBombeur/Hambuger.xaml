@@ -7,11 +7,15 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800">
 
-    <Grid  Background="White">
+    <Page.Background>
+        <ImageBrush ImageSource="/Image/Logo/Background.jpg" Stretch="UniformToFill" />
+    </Page.Background>
+
+    <Grid>
         <local:UC_TypePlat/>
-        <Button Content="Accueil" Click="Accueil" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <Button Content="Ajouter au panier" Click="Panier" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-        <Button Content="Ajouter un plat" Click="AjoutPlat" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <Button Content="Accueil" Click="Accueil" HorizontalAlignment="Right" VerticalAlignment="Top" Height="50" Width="50" Background="#FF262626" Foreground="White" BorderBrush="White"/>
+        <Button Content="Ajouter au panier" Click="Panier" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="50" Background="#FF262626" Foreground="White" BorderBrush="White"/>
+        <Button Content="Ajouter un plat" Click="AjoutPlat" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="50" Width="100" Background="#FF262626" Foreground="White" BorderBrush="White"/>
 
     </Grid>
 </Page>

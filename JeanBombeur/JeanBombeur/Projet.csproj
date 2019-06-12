@@ -206,5 +206,8 @@
     <Resource Include="Image\Sandwichs\Thon.PNG" />
     <Resource Include="Image\Sandwichs\Vegan.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Logo\Background.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

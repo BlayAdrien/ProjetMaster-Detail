@@ -8,6 +8,10 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Categorie">
 
+    <Page.Background>
+        <ImageBrush ImageSource="/Image/Logo/Background.jpg" Stretch="UniformToFill" />
+    </Page.Background>
+
     <Page.Resources>
         <Style x:Key="Choose" TargetType="TextBlock">
             <Setter Property="Margin" Value="0,0,0,250" />

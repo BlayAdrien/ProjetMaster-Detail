@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Panier">
 
-    <Grid Background="White">
+    <Grid Background="#585453">
         <StackPanel>
             <TextBlock Text="Panier" HorizontalAlignment="Center" FontSize="23"/>
         </StackPanel>

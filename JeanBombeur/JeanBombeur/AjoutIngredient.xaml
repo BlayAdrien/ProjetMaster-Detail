@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:JeanBombeur"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <Grid Background="#585453">
         <DockPanel Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Stretch">
             <Grid>
                 <Grid.ColumnDefinitions>
