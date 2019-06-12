@@ -21,12 +21,15 @@ namespace JeanBombeur
     /// </summary>
     public partial class Hamburger : Page
     {
+
+
         public Hamburger()
         {
             InitializeComponent();
+
         }
-        
-        private void Accueil(object sender, RoutedEventArgs e)
+
+            private void Accueil(object sender, RoutedEventArgs e)
         {
             Categorie c = new Categorie();
             this.NavigationService.Navigate(c);

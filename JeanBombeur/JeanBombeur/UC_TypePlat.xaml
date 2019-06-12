@@ -12,6 +12,7 @@
 
     <Grid>
         <ListView DockPanel.Dock="Left" x:Name="listPlat" HorizontalAlignment="Left" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding ListPlat}" HorizontalContentAlignment="Stretch" Background="White">
+
             <ListView.ItemTemplate >
                 <DataTemplate  >
                     <Label Content="{Binding NomPlat}"  Foreground="White"  Background="Black"/>

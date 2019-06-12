@@ -25,23 +25,24 @@ namespace JeanBombeur
         public Pizza()
         {
             InitializeComponent();
-        }
 
-        private void Accueil(object sender, RoutedEventArgs e)
-        {
-            Categorie c = new Categorie();
-            this.NavigationService.Navigate(c);
         }
-        private void Panier(object sender, RoutedEventArgs e)
-        {
-            Panier pa = new Panier();
-            this.NavigationService.Navigate(pa);
-        }
+            private void Accueil(object sender, RoutedEventArgs e)
+            {
+                Categorie c = new Categorie();
+                this.NavigationService.Navigate(c);
+            }
+            private void Panier(object sender, RoutedEventArgs e)
+            {
+                Panier pa = new Panier();
+                this.NavigationService.Navigate(pa);
+            }
 
-        private void AjoutPlat(object sender, RoutedEventArgs e)
-        {
-            Window ajoutPlat = new AjoutPlat();
-            ajoutPlat.Show();
-        }
+            private void AjoutPlat(object sender, RoutedEventArgs e)
+            {
+                Window ajoutPlat = new AjoutPlat();
+                ajoutPlat.Show();
+            }
     }
 }
+

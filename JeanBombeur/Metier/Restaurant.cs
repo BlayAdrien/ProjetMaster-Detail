@@ -34,6 +34,8 @@ namespace Metier
         }
 
         private ObservableCollection<Plat> listPlat;
+        
+
         public ReadOnlyObservableCollection<Plat> ListPlat
         {
             get
@@ -42,34 +44,34 @@ namespace Metier
             }
         }
 
+
         public void ValiderPlat(Plat p)
         {
             listPlat.Add(p);
         }
 
-        public IEnumerable<Plat> filtrerPizza => ListPlat.Where(p => p.Categorie.StartsWith("Pizza"));
-        public IEnumerable<Plat> filtrerSandwich => ListPlat.Where(p => p.Categorie.StartsWith("Sandwich"));
-        public IEnumerable<Plat> filtrerHamburger => ListPlat.Where(p => p.Categorie.StartsWith("Hamburger"));
-
-
-        public IEnumerable<Plat> ListPlatFiltre(string filter)
+        private string filter;
+        private IEnumerable<Plat> list;
+        public IEnumerable<Plat> ListPlatFiltre
         {
-
-            IEnumerable<Plat> list;
-
-            if (filter == "Pizza")
+         
+            get
             {
-                list = filtrerPizza;
+                
+                if (filter == "Pizza")
+                {
+                    list =  ListPlat.Where(p => p.Categorie.StartsWith("Pizza"));
+                }
+                if (filter == "Hamburger")
+                {
+                    list = ListPlat.Where(p => p.Categorie.StartsWith("Hamburger"));
+                }
+                if (filter == "Sandwich")
+                {
+                    list =  ListPlat.Where(p => p.Categorie.StartsWith("Sandwich"));
+                }
+                return list;
             }
-            else if (filter == "Hamburger")
-            {
-                list = filtrerHamburger;
-            }
-            else
-            {
-                list = filtrerSandwich;
-            }
-            return list;
         }
 
         public Restaurant()
@@ -114,9 +116,6 @@ namespace Metier
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(NomResto);
             hashCode = hashCode * -1521134295 + EqualityComparer<ObservableCollection<Plat>>.Default.GetHashCode(listPlat);
             hashCode = hashCode * -1521134295 + EqualityComparer<ReadOnlyObservableCollection<Plat>>.Default.GetHashCode(ListPlat);
-            hashCode = hashCode * -1521134295 + EqualityComparer<IEnumerable<Plat>>.Default.GetHashCode(filtrerPizza);
-            hashCode = hashCode * -1521134295 + EqualityComparer<IEnumerable<Plat>>.Default.GetHashCode(filtrerSandwich);
-            hashCode = hashCode * -1521134295 + EqualityComparer<IEnumerable<Plat>>.Default.GetHashCode(filtrerHamburger);
             return hashCode;
         }
     }
