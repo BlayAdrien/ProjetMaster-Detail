@@ -3,35 +3,45 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:JeanBombeur"
              StartupUri="MainWindow.xaml">
-    
+
     <Application.Resources>
-     <!--   <Style x:Key="StyleApp" TargetType="Page">
-            <Setter Property="Background"        Value="Black"/>
-        </Style>
-        <Style x:Key="StyleApp2" TargetType="TextBlock">
-            <Setter Property="FontSize"             Value="16"/>
-            <Setter Property="HorizontalAlignment"  Value="Center" />
-        </Style>
-        <Style x:Key="StyleApp3" TargetType="Border">
-            <Setter Property="Margin"               Value="10" />
-        </Style> -->
         <Style x:Key="Titre" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="40" />
-            <Setter Property="FontWeight" Value="Bold" />
-            <Setter Property="FontFamily" Value="Verdana" />
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontFamily" Value="Verdana"/>
+            <Setter Property="Foreground" Value="DarkOrange"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
 
         <Style x:Key="Image" TargetType="Image">
             <Setter Property="Margin" Value="20,0,0,0" />
-            <Setter Property="Height" Value="100"/>
-            <Setter Property="Width" Value="200"/>
-
         </Style>
+
+        <Style x:Key="Viewbx" TargetType="Viewbox">
+            <Setter Property="Height" Value="Auto" />
+        </Style>
+
         <Style x:Key="FontFamily" TargetType="TextBlock">
             <Setter Property="TextElement.FontFamily" Value="/Font/Blacksword.otf" />
         </Style>
 
+        <Style x:Key="BtnUC" TargetType="Button">
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="Margin" Value="0,0,20,0"/>
+            <Setter Property="Background" Value="#FF262626"/>
+        </Style>
 
+        <Style x:Key="ListVw" TargetType="ListView">
+            <Setter Property="Foreground" Value="DarkOrange"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="5"/>
+            <Setter Property="Background" Value="#FF262626"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,10,20,0"/>
+        </Style>
+        
     </Application.Resources>
-
  </Application>

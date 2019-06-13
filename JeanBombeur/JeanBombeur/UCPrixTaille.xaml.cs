@@ -28,20 +28,20 @@ namespace JeanBombeur
             DataContext = this;
         }
 
-        public static readonly DependencyProperty TaillePlatProperty = DependencyProperty.Register("TaillePlat", typeof(string), typeof(UCPrixTaille));
+        public static readonly DependencyProperty TailleProperty = DependencyProperty.Register("Taille", typeof(string), typeof(UCPrixTaille));
         public static readonly DependencyProperty PrixPlatProperty = DependencyProperty.Register("PrixPlat",typeof(float), typeof(UCPrixTaille));
 
         
 
-        public string TaillePlat
+        public string Taille
         {
             get
             {
-                return GetValue(TaillePlatProperty) as string;
+                return (string)GetValue(TailleProperty);
             }
             set
             {
-                SetValue(TaillePlatProperty, value);
+                SetValue(TailleProperty, value);
             }
         }
 

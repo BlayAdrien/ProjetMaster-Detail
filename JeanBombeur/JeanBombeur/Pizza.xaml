@@ -11,15 +11,13 @@
         <ImageBrush ImageSource="/Image/Logo/Background.jpg" Stretch="UniformToFill" />
     </Page.Background>
 
-
-
     <Grid>
         <local:UC_TypePlat/>
-        <Button Content="Accueil" Click="Accueil" HorizontalAlignment="Right" VerticalAlignment="Top" Height="50" Width="50" Background="#FF262626" Foreground="White" BorderBrush="White"/>
-        <Button Content="Ajouter au panier" Click="Panier" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="50" Background="#FF262626" Foreground="White" BorderBrush="White"/>
-        <Button Content="Ajouter un plat" Click="AjoutPlat" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="50" Width="100" Background="#FF262626" Foreground="White" BorderBrush="White"/>
-
-
+        <Button Style="{StaticResource BtnUC}" Content="Accueil" Click="Accueil" HorizontalAlignment="Right" VerticalAlignment="Top" Width="50"/>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Button Style="{StaticResource BtnUC}" Content="Ajouter au panier" Click="Panier"/>
+            <Button Style="{StaticResource BtnUC}" Content="Ajouter un plat" Click="AjoutPlat" Width="100"/>
+        </StackPanel>
     </Grid>
    
 </Page>

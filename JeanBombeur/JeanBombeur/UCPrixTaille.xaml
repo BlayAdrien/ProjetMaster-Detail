@@ -7,12 +7,12 @@
              xmlns:local="clr-namespace:JeanBombeur"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+    <Grid Background="Wheat">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="{Binding TaillePlat}"/>
+        <TextBlock Text="{Binding Taille}"/>
         <TextBlock Text="{Binding PrixPlat}" Grid.Row="1"/>
     </Grid>
 </UserControl>
