@@ -22,8 +22,6 @@ namespace Metier
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        // public List<Ingredient> ListIng { get { return listIng; } }
-        //private List<Ingredient> listIng = new List<Ingredient>();
 
         public override int GetHashCode()
         {

@@ -51,6 +51,14 @@ namespace Metier
         }
 
         private string filter;
+
+        public string Filter
+        {
+            get
+            {
+                return filter;
+            }
+        }
         private IEnumerable<Plat> list;
         public IEnumerable<Plat> ListPlatFiltre
         {
@@ -58,7 +66,7 @@ namespace Metier
             get
             {
                 
-                if (filter == "Pizza")
+                if (filter ==  "Pizza")
                 {
                     list =  ListPlat.Where(p => p.Categorie.StartsWith("Pizza"));
                 }

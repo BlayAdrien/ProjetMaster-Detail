@@ -28,8 +28,8 @@ namespace JeanBombeur
             DataContext = this;
         }
 
-        public static readonly DependencyProperty TailleProperty = DependencyProperty.Register("Taille", typeof(string), typeof(UCPrixTaille));
-        public static readonly DependencyProperty PrixProperty = DependencyProperty.Register("PrixPlat",typeof(float), typeof(UCPrixTaille));
+        public static readonly DependencyProperty TaillePlatProperty = DependencyProperty.Register("TaillePlat", typeof(string), typeof(UCPrixTaille));
+        public static readonly DependencyProperty PrixPlatProperty = DependencyProperty.Register("PrixPlat",typeof(float), typeof(UCPrixTaille));
 
         
 
@@ -37,11 +37,11 @@ namespace JeanBombeur
         {
             get
             {
-                return GetValue(TailleProperty) as string;
+                return GetValue(TaillePlatProperty) as string;
             }
             set
             {
-                SetValue(TailleProperty, value);
+                SetValue(TaillePlatProperty, value);
             }
         }
 
@@ -49,11 +49,11 @@ namespace JeanBombeur
         {
             get
             {
-                return (float)GetValue(PrixProperty);
+                return (float)GetValue(PrixPlatProperty);
             }
             set
             {
-                SetValue(PrixProperty, value);
+                SetValue(PrixPlatProperty, value);
             }
         }
     }
