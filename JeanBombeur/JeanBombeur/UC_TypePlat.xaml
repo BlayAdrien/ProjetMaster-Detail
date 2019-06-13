@@ -11,7 +11,7 @@
 
 
     <Grid>
-        <ListView DockPanel.Dock="Left" x:Name="listPlat" HorizontalAlignment="Left" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding ListPlatView}" HorizontalContentAlignment="Stretch" Background="White">
+        <ListView DockPanel.Dock="Left" x:Name="listPlat" HorizontalAlignment="Left" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding ListPlat}" HorizontalContentAlignment="Stretch" Background="White">
 
             <ListView.ItemTemplate >
                 <DataTemplate  >
@@ -44,7 +44,7 @@
                             </StackPanel> -->
                                 
                             
-                            <TextBlock x:Name="Ecriture"  Text="Ingredient" Grid.ColumnSpan="2" HorizontalAlignment="Center" Grid.Row="2" FontFamily="Verdana" FontSize="25" Foreground="DarkOrange" />
+                            <TextBlock x:Name="Ecriture"  Text="Ingredients" Grid.ColumnSpan="2" HorizontalAlignment="Center" Grid.Row="2" FontFamily="Verdana" FontSize="25" Foreground="DarkOrange" />
                             <ListView DockPanel.Dock="Left" Name="listIngredient" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding ListIngredient, Mode=OneWay}" HorizontalAlignment="Center" Margin="0,10,20,0" BorderBrush="White" BorderThickness="5" Grid.ColumnSpan="2" Grid.Row="3" Background="#FF262626" Foreground="DarkOrange"/>
                         </Grid>
                     </StackPanel>

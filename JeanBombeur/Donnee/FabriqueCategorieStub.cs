@@ -14,163 +14,162 @@ namespace Donnee
         {
             Restaurant r = new Restaurant();
 
-            r.AjouterPlat(new Plat("Pizza", "Reine", "/Image/Pizza/reine.jpg","M", 8,
+            r.AjouterPlat(new Plat("Pizza", "Reine", "/Image/Pizza/Reine.png","M", 8,
                 new ObservableCollection<Ingredient>
                 {
-                    new Ingredient("Coulis de tomates", new Quantite(100, Unite.g)),
-                    new Ingredient("Tranches de jambon", new Quantite(4, Unite.unité)),
-                    new Ingredient("Gruyère rapé", new Quantite(30, Unite.g)),
-                    new Ingredient("Champignon", new Quantite(250, Unite.g)),
+                    new Ingredient("de coulis de tomates", new Quantite(100, Unite.g)),
+                    new Ingredient("de tranches de jambon", new Quantite(4, Unite.unité)),
+                    new Ingredient("de gruyère rapé", new Quantite(30, Unite.g)),
+                    new Ingredient("de champignon", new Quantite(250, Unite.g)),
                 }
             ));
 
-            r.AjouterPlat(new Plat("Pizza", "Hawaienne", "/Image/Pizza/Hawaienne.jpg", "M", 10,
+            r.AjouterPlat(new Plat("Pizza", "Hawaienne", "/Image/Pizza/Hawaienne.png", "M", 10,
                 new ObservableCollection<Ingredient>
                 {
-                    new Ingredient("Coulis de tomates", new Quantite(150, Unite.g)),
-                    new Ingredient("Mozzarella", new Quantite(100, Unite.g)),
-                    new Ingredient("Tranches de jambon", new Quantite(3, Unite.unité)),
-                    new Ingredient("Ananas", new Quantite(1, Unite.unité)),
+                    new Ingredient("de coulis de tomates", new Quantite(150, Unite.g)),
+                    new Ingredient("de mozzarella", new Quantite(100, Unite.g)),
+                    new Ingredient("de tranches de jambon", new Quantite(3, Unite.unité)),
+                    new Ingredient("d'ananas", new Quantite(1, Unite.unité)),
 
                 }
             ));
 
-             r.AjouterPlat(new Plat("Pizza", "Margherita", "/Image/Pizza/Margherita.jpg", "M", 6,
+             r.AjouterPlat(new Plat("Pizza", "Margherita", "/Image/Pizza/Margherita.png", "M", 6,
                  new ObservableCollection<Ingredient>
                  {
-                    new Ingredient("Coulis de tomates", new Quantite(700, Unite.g)),
-                    new Ingredient("Mozzarella", new Quantite(400, Unite.g)),
-                    new Ingredient("Feuilles de basilic", new Quantite(30, Unite.unité)),
+                    new Ingredient("de coulis de tomates", new Quantite(700, Unite.g)),
+                    new Ingredient("de mozzarella", new Quantite(400, Unite.g)),
+                    new Ingredient("de feuilles de basilic", new Quantite(30, Unite.unité)),
                  }
              ));
 
-            r.AjouterPlat(new Plat("Pizza", "4 fromages", "/Image/Pizza/4fromages.jpg", "M", 11,
+            r.AjouterPlat(new Plat("Pizza", "4 fromages", "/Image/Pizza/4fromages.png", "M", 11,
                  new ObservableCollection<Ingredient>
                  {
-                    new Ingredient("Coulis de tomates", new Quantite(100, Unite.g)),
-                    new Ingredient("Gorgonzola", new Quantite(160, Unite.g)),
-                    new Ingredient("Parmesan râpés", new Quantite(80, Unite.g)),
-                    new Ingredient("Boule de mozzarella", new Quantite(1, Unite.unité)),
-                    new Ingredient("Fromages de chèvre", new Quantite(160, Unite.g)),
+                    new Ingredient("de coulis de tomates", new Quantite(100, Unite.g)),
+                    new Ingredient("de gorgonzola", new Quantite(160, Unite.g)),
+                    new Ingredient("de parmesan râpés", new Quantite(80, Unite.g)),
+                    new Ingredient("de mozzarella", new Quantite(100, Unite.g)),
+                    new Ingredient("de fromages de chèvre", new Quantite(160, Unite.g)),
                  }
              ));
 
-            r.AjouterPlat(new Plat("Pizza", "4 saisons", "/Image/Pizza/4 saisons.jpg", "M", 8,
+            r.AjouterPlat(new Plat("Pizza", "4 saisons", "/Image/Pizza/4 saisons.png", "M", 8,
                  new ObservableCollection<Ingredient>
                  {
-                    new Ingredient("Coulis de tomates", new Quantite(100, Unite.g)),
-                    new Ingredient("Champignons", new Quantite(150, Unite.g)),
-                    new Ingredient("Tranches de jambon blanc", new Quantite(2, Unite.unité)),
-                    new Ingredient("cuillère à soupe d'huile d'olive ", new Quantite(4, Unite.unité)),
-                    new Ingredient("Tomates", new Quantite(3, Unite.unité)),
-                    new Ingredient("Aubergine", new Quantite(1, Unite.unité)),
-                    new Ingredient("poignée d'olives", new Quantite(1, Unite.unité)),
+                    new Ingredient("de coulis de tomates", new Quantite(100, Unite.g)),
+                    new Ingredient("de champignons", new Quantite(150, Unite.g)),
+                    new Ingredient("de tranches de jambon blanc", new Quantite(2, Unite.unité)),
+                    new Ingredient("de cuillère à soupe d'huile d'olive ", new Quantite(4, Unite.unité)),
+                    new Ingredient("de tomates", new Quantite(3, Unite.unité)),
+                    new Ingredient("d'aubergine", new Quantite(1, Unite.unité)),
+                    new Ingredient("de poignée d'olives", new Quantite(1, Unite.unité)),
                  }
              ));
 
-            r.AjouterPlat(new Plat("Hamburger", "Big Mac", "/Image/Hamburger/BigMac.jpg", "M", 6,
+            r.AjouterPlat(new Plat("Hamburger", "Big Mac", "/Image/Hamburger/BigMac.png", "M", 6,
                  new ObservableCollection<Ingredient>
                  {
-                    new Ingredient("Pain à burger", new Quantite(2, Unite.unité)),
-                    new Ingredient("Steak haché", new Quantite(45, Unite.g)),
-                    new Ingredient("Feuilles de laitue", new Quantite(2, Unite.unité)),
-                    new Ingredient("Tranche de cheddar", new Quantite(1, Unite.unité)),
-                    new Ingredient("Oignons", new Quantite(1, Unite.unité)),
-                    new Ingredient("Cornichons", new Quantite(3, Unite.unité)),
+                    new Ingredient("de pain à burger", new Quantite(2, Unite.unité)),
+                    new Ingredient("de steak haché", new Quantite(45, Unite.g)),
+                    new Ingredient("de feuilles de laitue", new Quantite(2, Unite.unité)),
+                    new Ingredient("de tranche de cheddar", new Quantite(1, Unite.unité)),
+                    new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
+                    new Ingredient("de cornichons", new Quantite(3, Unite.unité)),
                  }
              ));
 
             r.AjouterPlat(new Plat("Hamburger", "Fish", "/Image/Hamburger/Fish.PNG", "M", 7,
                  new ObservableCollection<Ingredient>
                  {
-                    new Ingredient("Pain à burger", new Quantite(2, Unite.unité)),
-                    new Ingredient("Filet de colin pané", new Quantite(400, Unite.g)),
-                    new Ingredient("Feuilles de laitue", new Quantite(2, Unite.unité)),
-                    new Ingredient("Sauce maison", new Quantite(1, Unite.unité)),
-                    new Ingredient("Cornichons", new Quantite(3, Unite.unité)),
+                    new Ingredient("de pain à burger", new Quantite(2, Unite.unité)),
+                    new Ingredient("de filet de colin pané", new Quantite(400, Unite.g)),
+                    new Ingredient("de feuilles de laitue", new Quantite(2, Unite.unité)),
+                    new Ingredient("de sauce maison", new Quantite(1, Unite.unité)),
+                    new Ingredient("de cornichons", new Quantite(3, Unite.unité)),
                  }
              ));
 
             r.AjouterPlat(new Plat("Hamburger", "Chicken", "/Image/Hamburger/Chicken.PNG", "M", 7,
                 new ObservableCollection<Ingredient>
                 {
-                    new Ingredient("Pain à burger", new Quantite(2, Unite.unité)),
-                    new Ingredient("Filet de d'escalope pané", new Quantite(400, Unite.g)),
-                    new Ingredient("Feuilles de laitue", new Quantite(2, Unite.unité)),
-                    new Ingredient("Sauce maison", new Quantite(1, Unite.unité)),
+                    new Ingredient("de pain à burger", new Quantite(2 , Unite.unité)),
+                    new Ingredient("de filet de d'escalope pané", new Quantite(400, Unite.g)),
+                    new Ingredient("de feuilles de laitue", new Quantite(2, Unite.unité)),
+                    new Ingredient("de sauce maison", new Quantite(1, Unite.unité)),
                 }
              ));
 
             r.AjouterPlat(new Plat("Hamburger", "Bacon", "/Image/Hamburger/Bacon.PNG", "M", 8,
                 new ObservableCollection<Ingredient>
                 {
-                    new Ingredient("Pain à burger", new Quantite(2, Unite.unité)),
-                    new Ingredient("Steaks hachés", new Quantite(3, Unite.unité)),
-                    new Ingredient("Tranches de cheddar", new Quantite(3, Unite.unité)),
-                    new Ingredient("Sauce burger", new Quantite(1, Unite.unité)),
-                    new Ingredient("Tranches de lard fumé", new Quantite(6, Unite.unité)),
-                    new Ingredient("Oignons", new Quantite(1, Unite.unité)),
+                    new Ingredient("de pain à burger", new Quantite(2, Unite.unité)),
+                    new Ingredient("de steaks hachés", new Quantite(3, Unite.unité)),
+                    new Ingredient("de tranches de cheddar", new Quantite(3, Unite.unité)),
+                    new Ingredient("de sauce burger", new Quantite(1, Unite.unité)),
+                    new Ingredient("de tranches de lard fumé", new Quantite(6, Unite.unité)),
+                    new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
                 }
             ));
 
             r.AjouterPlat(new Plat("Sandwich", "Thon", "/Image/Sandwichs/Thon.PNG", "M", 7,
                 new ObservableCollection<Ingredient>
                 {
-                    new Ingredient("Demi Baguette", new Quantite(1, Unite.unité)),
-                    new Ingredient("Petite boîte de thon au naturel", new Quantite(1, Unite.unité)),
-                    new Ingredient("Oignons", new Quantite(1, Unite.unité)),
-                    new Ingredient("Comcombre", new Quantite(1, Unite.unité)),
-                    new Ingredient("Tomate", new Quantite(1, Unite.unité)),
-                    new Ingredient("Feuilles de laitue", new Quantite(3, Unite.unité)),
+                    new Ingredient("d'une demi Baguette", new Quantite(1, Unite.unité)),
+                    new Ingredient("d'une petite boîte de thon au naturel", new Quantite(1, Unite.unité)),
+                    new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
+                    new Ingredient("de comcombre", new Quantite(1, Unite.unité)),
+                    new Ingredient("de tomate", new Quantite(1, Unite.unité)),
+                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité)),
                 }
             ));
 
             r.AjouterPlat(new Plat("Sandwich", "Jambon Beurre", "/Image/Sandwichs/Jambon.PNG", "M", 6,
               new ObservableCollection<Ingredient>
               {
-                    new Ingredient("Demi Baguette", new Quantite(1, Unite.unité)),
-                    new Ingredient("Tranche de jambon blanc", new Quantite(1, Unite.unité)),
-                    new Ingredient("Noix de beurre", new Quantite(1, Unite.unité)),
-                    new Ingredient("Oignons", new Quantite(1, Unite.unité)),
-                    new Ingredient("Comcombre", new Quantite(1, Unite.unité)),
-                    new Ingredient("Tomate", new Quantite(1, Unite.unité)),
-                    new Ingredient("Feuilles de laitue", new Quantite(3, Unite.unité)),
+                    new Ingredient("d'une demi Baguette", new Quantite(1, Unite.unité)),
+                    new Ingredient("de tranche de jambon blanc", new Quantite(1, Unite.unité)),
+                    new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
+                    new Ingredient("de comcombre", new Quantite(1, Unite.unité)),
+                    new Ingredient("de tomate", new Quantite(1, Unite.unité)),
+                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité)),
               }
             ));
 
             r.AjouterPlat(new Plat("Sandwich", "Poulet", "/Image/Sandwichs/Poulet.PNG", "M", 8,
               new ObservableCollection<Ingredient>
               {
-                    new Ingredient("Demi Baguette", new Quantite(1, Unite.unité)),
-                    new Ingredient("Escalopes grillées de poulet", new Quantite(2, Unite.unité)),
-                    new Ingredient("Oignons", new Quantite(1, Unite.unité)),
-                    new Ingredient("Comcombre", new Quantite(1, Unite.unité)),
-                    new Ingredient("Tomate", new Quantite(1, Unite.unité)),
-                    new Ingredient("Feuilles de laitue", new Quantite(3, Unite.unité)),
+                    new Ingredient("d'une demi Baguette", new Quantite(1, Unite.unité)),
+                    new Ingredient("d'escalopes grillées de poulet", new Quantite(2, Unite.unité)),
+                    new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
+                    new Ingredient("de comcombre", new Quantite(1, Unite.unité)),
+                    new Ingredient("de tomate", new Quantite(1, Unite.unité)),
+                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité)),
               }
           ));
 
             r.AjouterPlat(new Plat("Sandwich", "Vegan", "/Image/Sandwichs/Vegan.PNG", "M", 8,
               new ObservableCollection<Ingredient>
               {
-                    new Ingredient("Demi Baguette", new Quantite(1, Unite.unité)),
-                    new Ingredient("Oignons", new Quantite(1, Unite.unité)),
-                    new Ingredient("Comcombre", new Quantite(1, Unite.unité)),
-                    new Ingredient("Tomate", new Quantite(1, Unite.unité)),
-                    new Ingredient("Feuilles de laitue", new Quantite(3, Unite.unité)),
+                    new Ingredient("d'une demi Baguette", new Quantite(1, Unite.unité)),
+                    new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
+                    new Ingredient("de comcombre", new Quantite(1, Unite.unité)),
+                    new Ingredient("de tomate", new Quantite(1, Unite.unité)),
+                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité)),
               }
           ));
 
             r.AjouterPlat(new Plat("Sandwich", "Américain", "/Image/Sandwichs/Américain.PNG", "M", 8,
               new ObservableCollection<Ingredient>
               {
-                    new Ingredient("Demi Baguette", new Quantite(1, Unite.unité)),
-                    new Ingredient("Tranches de cheddar", new Quantite(4, Unite.unité)),
-                    new Ingredient("Steaks hachés", new Quantite(2, Unite.unité)),
-                    new Ingredient("Oignons", new Quantite(1, Unite.unité)),
-                    new Ingredient("Comcombre", new Quantite(1, Unite.unité)),
-                    new Ingredient("Tomate", new Quantite(1, Unite.unité)),
-                    new Ingredient("Feuilles de laitue", new Quantite(3, Unite.unité)),
+                    new Ingredient("d'une demi Baguette", new Quantite(1, Unite.unité)),
+                    new Ingredient("de tranches de cheddar", new Quantite(4, Unite.unité)),
+                    new Ingredient("de steaks hachés", new Quantite(2, Unite.unité)),
+                    new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
+                    new Ingredient("de comcombre", new Quantite(1, Unite.unité)),
+                    new Ingredient("de tomate", new Quantite(1, Unite.unité)),
+                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité)),
               }
           ));
 

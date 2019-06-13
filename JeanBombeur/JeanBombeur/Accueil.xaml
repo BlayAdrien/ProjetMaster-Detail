@@ -9,7 +9,7 @@
       Title="Accueil">
 
     <Page.Background>
-        <ImageBrush ImageSource="/Image/Logo/logo1.jpeg" Stretch="Uniform" />
+        <ImageBrush ImageSource="/Image/Logo/logoApli.png" Stretch="Uniform" />
     </Page.Background>
 
     <Grid>

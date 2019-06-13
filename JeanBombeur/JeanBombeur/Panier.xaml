@@ -8,9 +8,14 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Panier">
 
-    <Grid Background="#585453">
+    <Page.Background>
+        <ImageBrush ImageSource="/Image/Logo/Background.jpg" Stretch="UniformToFill" />
+    </Page.Background>
+
+
+    <Grid>
         <StackPanel>
-            <TextBlock Text="Panier" HorizontalAlignment="Center" FontSize="23"/>
+            <TextBlock Text="Panier" HorizontalAlignment="Center" FontSize="23" Foreground="DarkOrange"/>
         </StackPanel>
         <Button Content="Ajouter un plat" Click="Categorie" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
     </Grid>

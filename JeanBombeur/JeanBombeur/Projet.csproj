@@ -165,9 +165,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image\Logo\logo1.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Image\Logo\Pizza.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -187,14 +184,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image\Pizza\4 saisons.jpg" />
-    <Resource Include="Image\Pizza\4fromages.jpg" />
-    <Resource Include="Image\Hamburger\BigMac.jpg" />
-    <Resource Include="Image\Pizza\Hawaienne.jpg" />
-    <Resource Include="Image\Pizza\Margherita.jpg" />
-    <Resource Include="Image\Pizza\reine.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Image\Hamburger\Bacon.PNG" />
     <Resource Include="Image\Hamburger\Chicken.PNG" />
     <Resource Include="Image\Hamburger\Fish.PNG" />
@@ -205,6 +194,22 @@
     <Resource Include="Image\Sandwichs\Poulet.PNG" />
     <Resource Include="Image\Sandwichs\Thon.PNG" />
     <Resource Include="Image\Sandwichs\Vegan.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Logo\Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Hamburger\BigMac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Pizza\4 saisons.png" />
+    <Resource Include="Image\Pizza\4fromages.png" />
+    <Resource Include="Image\Pizza\Hawaienne.png" />
+    <Resource Include="Image\Pizza\Margherita.png" />
+    <Resource Include="Image\Pizza\Reine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Logo\LogoApli.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
