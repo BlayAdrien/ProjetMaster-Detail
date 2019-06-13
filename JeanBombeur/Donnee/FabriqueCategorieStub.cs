@@ -61,7 +61,7 @@ namespace Donnee
                     new Ingredient("de coulis de tomates", new Quantite(100, Unite.g)),
                     new Ingredient("de champignons", new Quantite(150, Unite.g)),
                     new Ingredient("de tranches de jambon blanc", new Quantite(2, Unite.unité)),
-                    new Ingredient("de cuillère à soupe d'huile d'olive ", new Quantite(4, Unite.unité)),
+                    new Ingredient("d'huile d'olive ", new Quantite(4, Unite.càs)),
                     new Ingredient("de tomates", new Quantite(3, Unite.unité)),
                     new Ingredient("d'aubergine", new Quantite(1, Unite.unité)),
                     new Ingredient("de poignée d'olives", new Quantite(1, Unite.unité)),
