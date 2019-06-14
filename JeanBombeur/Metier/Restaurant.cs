@@ -62,6 +62,17 @@ namespace Metier
             {
                 return filter;
             }
+            set
+            {
+                if (value.Length > 50)
+                {
+                    filter = value.Substring(0, 50);
+                }
+                else
+                {
+                    filter = value;
+                }
+            }
         }
         private IEnumerable<Plat> list;
         public IEnumerable<Plat> ListPlatFiltre
@@ -69,15 +80,15 @@ namespace Metier
             get
             {
                 
-                if (filter == "Pizza")
+                if (Plat.Equals(filter, "Pizza"))
                 {
                     list =  ListPlat.Where(p => p.Categorie.StartsWith("Pizza"));
                 }
-                if (filter == "Hamburger")
+                if (Plat.Equals(filter,"Hamburger"))
                 {
                     list = ListPlat.Where(p => p.Categorie.StartsWith("Hamburger"));
                 }
-                if (filter == "Sandwich")
+                if (Plat.Equals(filter, "Sandwich"))
                 {
                     list =  ListPlat.Where(p => p.Categorie.StartsWith("Sandwich"));
                 }

@@ -24,7 +24,7 @@ namespace Donnee
                 }
             ));
 
-            r.AjouterPlat(new Plat("Pizza", "Hawaienne", "/Image/Pizza/Hawaienne.png", "M", 10,
+            r.AjouterPlat(new Plat("Pizza", "Hawaienne", "/Image/Pizza/Hawaienne.png", "L", 10,
                 new ObservableCollection<Ingredient>
                 {
                     new Ingredient("de coulis de tomates", new Quantite(150, Unite.g)),
@@ -44,7 +44,7 @@ namespace Donnee
                  }
              ));
 
-            r.AjouterPlat(new Plat("Pizza", "4 fromages", "/Image/Pizza/4fromages.png", "M", 11,
+            r.AjouterPlat(new Plat("Pizza", "4 fromages", "/Image/Pizza/4fromages.png", "XL", 11,
                  new ObservableCollection<Ingredient>
                  {
                     new Ingredient("de coulis de tomates", new Quantite(100, Unite.g)),
@@ -149,7 +149,7 @@ namespace Donnee
               }
           ));
 
-            r.AjouterPlat(new Plat("Sandwich", "Vegan", "/Image/Sandwichs/Vegan.PNG", "M", 8,
+            r.AjouterPlat(new Plat("Sandwich", "Vegan", "/Image/Sandwichs/Vegan.PNG", "XL", 13,
               new ObservableCollection<Ingredient>
               {
                     new Ingredient("d'une demi Baguette", new Quantite(1, Unite.unité)),
@@ -160,7 +160,7 @@ namespace Donnee
               }
           ));
 
-            r.AjouterPlat(new Plat("Sandwich", "Américain", "/Image/Sandwichs/Américain.PNG", "M", 8,
+            r.AjouterPlat(new Plat("Sandwich", "Américain", "/Image/Sandwichs/Américain.PNG", "M", 9,
               new ObservableCollection<Ingredient>
               {
                     new Ingredient("d'une demi Baguette", new Quantite(1, Unite.unité)),

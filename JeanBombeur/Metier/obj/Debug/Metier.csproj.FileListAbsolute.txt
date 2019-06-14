@@ -29,3 +29,5 @@ C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\obj\Debug\Metier.pdb
 U:\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csprojAssemblyReference.cache
 U:\Projet XAML\JeanBombeur\Metier\bin\Debug\System.Threading.Tasks.Dataflow.dll
 U:\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csproj.CopyComplete
+C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\obj\Debug\Metier.csproj.CopyComplete

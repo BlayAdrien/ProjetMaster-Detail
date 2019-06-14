@@ -7,35 +7,28 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Metier
 {
     public class Persistance
     {
-
-        BinaryFormatter ecriture = new BinaryFormatter();
-
-        public void sauvegarde(ObservableCollection<Plat> listeplat, string chemin)
+        public void Sauvegarde(string chemin)
         {
-            int i;
-            if (File.Exists(chemin))
+            using (Stream stream = new FileStream(chemin, FileMode.Create))
             {
-                File.Delete(chemin);
-                File.Create(chemin).Close();
+                var XML = new XmlSerializer(typeof(Restaurant));
+                XML.Serialize(stream, this);
             }
-            Stream sauvegarde = new FileStream(chemin, FileMode.Open, FileAccess.Write);
-            for (i = 0; i < listeplat.Count; i++)
-            {
-                ecriture.Serialize(sauvegarde, listeplat[i]);
-            }
-            sauvegarde.Close();
         }
+        public static Restaurant Charge(string chemin)
+        {
+            using (Stream stream = new FileStream(chemin, FileMode.Open))
+            {
+                var XML = new XmlSerializer(typeof(Restaurant));
+                return (Restaurant)XML.Deserialize(stream);
+            }
         
-        public ObservableCollection<Plat> Chargement(string cheminAbsolu)
-        {
-            ObservableCollection<Plat> charge = new ObservableCollection<Plat>();
-            Stream charge
-        }
-
+        }        
     }
 }
