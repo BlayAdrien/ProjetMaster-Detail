@@ -29,8 +29,5 @@ namespace JeanBombeur
             listPlat.DataContext = Restaurant;
             DataContext = this;
         }
-
-
     }
-    
 }
