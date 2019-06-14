@@ -6,12 +6,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Windows.Data;
+using System.Runtime.CompilerServices;
 
 namespace Metier
 {
-    public class Restaurant
+    public class Restaurant :INotifyPropertyChanged
     {
-
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         private string nomResto;
         public string NomResto
@@ -34,13 +39,12 @@ namespace Metier
         }
 
         private ObservableCollection<Plat> listPlat;
-        
 
-        public ReadOnlyObservableCollection<Plat> ListPlat
+        public ObservableCollection<Plat> ListPlat
         {
             get
             {
-                return new ReadOnlyObservableCollection<Plat>(listPlat);
+                return new ObservableCollection<Plat>(listPlat);
             }
         }
 
@@ -62,11 +66,10 @@ namespace Metier
         private IEnumerable<Plat> list;
         public IEnumerable<Plat> ListPlatFiltre
         {
-         
             get
             {
                 
-                if (filter ==  "Pizza")
+                if (filter == "Pizza")
                 {
                     list =  ListPlat.Where(p => p.Categorie.StartsWith("Pizza"));
                 }
@@ -81,6 +84,7 @@ namespace Metier
                 return list;
             }
         }
+
 
         public Restaurant()
         {
@@ -123,7 +127,7 @@ namespace Metier
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(nomResto);
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(NomResto);
             hashCode = hashCode * -1521134295 + EqualityComparer<ObservableCollection<Plat>>.Default.GetHashCode(listPlat);
-            hashCode = hashCode * -1521134295 + EqualityComparer<ReadOnlyObservableCollection<Plat>>.Default.GetHashCode(ListPlat);
+            hashCode = hashCode * -1521134295 + EqualityComparer<ObservableCollection<Plat>>.Default.GetHashCode(ListPlat);
             return hashCode;
         }
     }

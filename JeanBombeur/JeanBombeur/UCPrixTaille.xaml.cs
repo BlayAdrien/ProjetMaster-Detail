@@ -25,7 +25,8 @@ namespace JeanBombeur
         public UCPrixTaille()
         {
             InitializeComponent();
-            DataContext = this;
+            DTaille.DataContext = this;
+            DPrix.DataContext = this;
         }
 
         public static readonly DependencyProperty TailleProperty = DependencyProperty.Register("Taille", typeof(string), typeof(UCPrixTaille));

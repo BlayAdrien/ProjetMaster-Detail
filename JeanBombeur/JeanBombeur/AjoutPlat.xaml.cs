@@ -22,14 +22,10 @@ namespace JeanBombeur
     /// </summary>
     public partial class AjoutPlat : Window
     {
-        private Restaurant selection = new Restaurant();
         public Restaurant Selection
         {
-            get { return selection; }
-            set
-            {
-                selection = value;
-            }
+            get;
+            set;
         }
 
         Plat r = new Plat();
@@ -76,7 +72,7 @@ namespace JeanBombeur
         private void Valider(object sender, RoutedEventArgs e)
         {
             Selection.ValiderPlat(r);
-            MessageBox.Show("Recette ajoutée avec succès!");
+            // MessageBox.Show("Recette ajoutée avec succès!");
             this.Close();
         }
     }

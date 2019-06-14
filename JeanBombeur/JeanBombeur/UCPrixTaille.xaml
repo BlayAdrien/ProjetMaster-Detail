@@ -7,12 +7,26 @@
              xmlns:local="clr-namespace:JeanBombeur"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Wheat">
+    <UserControl.Resources>
+        <Style x:Key="TxtBlck" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="Red"/>
+            <Setter Property="FontWeight" Value="UltraBold"/>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid Background="Transparent">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="{Binding Taille}"/>
-        <TextBlock Text="{Binding PrixPlat, StringFormat={}{0}€}" Grid.Row="1"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <TextBlock Name="DTaille" Text="{Binding Taille}" Grid.Column="1" FontSize="40" Style="{StaticResource TxtBlck}"/>
+            <TextBlock Name="DPrix" Text="{Binding PrixPlat, StringFormat={}{0}€}" Grid.Row="1"  Style="{StaticResource TxtBlck}" FontSize="100"/>
+        </StackPanel>
     </Grid>
 </UserControl>

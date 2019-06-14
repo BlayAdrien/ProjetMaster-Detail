@@ -88,11 +88,11 @@ namespace Metier
         }
 
         private ObservableCollection<Ingredient> listIngredient;
-        public ReadOnlyObservableCollection<Ingredient> ListIngredient
+        public ObservableCollection<Ingredient> ListIngredient
         {
             get
             {
-                return new ReadOnlyObservableCollection<Ingredient>(listIngredient);
+                return new ObservableCollection<Ingredient>(listIngredient);
             }
         }
 

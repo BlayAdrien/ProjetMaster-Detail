@@ -56,6 +56,7 @@ namespace JeanBombeur
             {
                 Persistance.ChargerCategorie(chargement.FileName);
             }
+
         }
     }
 }
