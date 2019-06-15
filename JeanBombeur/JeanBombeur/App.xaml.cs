@@ -15,6 +15,7 @@ namespace JeanBombeur
     public partial class App : Application
     {
         public static Restaurant Restaurant { get; private set; } = new FabriqueCategorieStub().CreateCategorie();
-     
+        public static Restaurant Sauvegarde;
+
     }
 }

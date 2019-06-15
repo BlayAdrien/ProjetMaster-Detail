@@ -13,12 +13,12 @@ namespace Metier
 {
     public class Persistance
     {
-        public void Sauvegarde(string chemin)
+        public static void Sauvegarde(string chemin, Restaurant r)
         {
             using (Stream stream = new FileStream(chemin, FileMode.Create))
             {
                 var XML = new XmlSerializer(typeof(Restaurant));
-                XML.Serialize(stream, this);
+                XML.Serialize(stream, r);
             }
         }
         public static Restaurant Charge(string chemin)

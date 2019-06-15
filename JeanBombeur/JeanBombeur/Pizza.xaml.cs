@@ -43,6 +43,16 @@ namespace JeanBombeur
                 Window ajoutPlat = new AjoutPlat();
                 ajoutPlat.Show();
             }
+        private void Sauvegarder(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Charger(object sender, RoutedEventArgs e)
+        {
+
+
+        }
     }
 }
 

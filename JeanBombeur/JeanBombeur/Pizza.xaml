@@ -13,10 +13,13 @@
 
     <Grid>
         <local:UC_TypePlat/>
-        <Button Style="{StaticResource BtnUC}" Content="Accueil" Click="Accueil" HorizontalAlignment="Right" VerticalAlignment="Top" Width="50"/>
+        <Button Style="{StaticResource BtnUC}" Content="Accueil" Click="Accueil" HorizontalAlignment="Right" VerticalAlignment="Top" Width="50" />
         <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom">
-            <Button Style="{StaticResource BtnUC}" Content="Ajouter au panier" Click="Panier"/>
-            <Button Style="{StaticResource BtnUC}" Content="Ajouter un plat" Click="AjoutPlat" Width="100"/>
+            <Button Style="{StaticResource BtnUC}" Content="Ajouter un plat" Click="AjoutPlat" Width="100" />
+            <DockPanel>
+                <Button Style="{StaticResource BtnUC}" Content="Sauvegarder" Click="Sauvegarder" Margin="0,0,0,0"/>
+                <Button Style="{StaticResource BtnUC}" Content="Chargement" Click="Charger" />
+            </DockPanel>
         </StackPanel>
     </Grid>
    

@@ -29,7 +29,8 @@
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="0.1*"/>
                                     <RowDefinition Height="0.1*"/>
-                                    <RowDefinition Height="0.3*"/>
+                                    <RowDefinition Height="0.1*"/>
+                                    <RowDefinition Height="0.2*"/>
                                     <RowDefinition Height="0.5*"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
@@ -46,10 +47,14 @@
                                 <StackPanel Grid.ColumnSpan="2" Grid.Row="1">
                                     <local:UCPrixTaille PrixPlat="{Binding PrixPlat}" Taille="{Binding Taille}"/>
                                 </StackPanel>
-                                <Viewbox Style="{StaticResource Viewbx}" Grid.Column="1" Grid.Row="2">
+                                <Viewbox Style="{StaticResource Viewbx}" Grid.Column="1" Grid.Row="3">
                                     <TextBlock x:Name="Ecriture" Text="Ingredients" HorizontalAlignment="Center" FontFamily="Verdana" FontSize="25" Foreground="DarkOrange"/>
                                 </Viewbox>
-                                <ListView Style="{StaticResource ListVw}" DockPanel.Dock="Left" Name="listIngredient" Grid.ColumnSpan="3" Grid.Row="3" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding ListIngredient, Mode=OneWay}"/>
+                                <ListView Style="{StaticResource ListVw}" DockPanel.Dock="Left" Name="listIngredient" Grid.ColumnSpan="3" Grid.Row="4" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding ListIngredient, Mode=OneWay}"/>
+                                <StackPanel Grid.Row="2" Orientation="Horizontal">
+                                    <TextBlock Text="Note" Foreground="DarkOrange" Margin="20,20,20,20"/>
+                                    <local:Note Loaded="Notes" Grid.Row="2" />
+                                </StackPanel>
                             </Grid>
                         </StackPanel>
                     </DataTemplate>

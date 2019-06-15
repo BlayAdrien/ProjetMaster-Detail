@@ -22,10 +22,14 @@ namespace JeanBombeur
     /// </summary>
     public partial class AjoutPlat : Window
     {
+        private Restaurant selection = new Restaurant();
         public Restaurant Selection
         {
-            get;
-            set;
+            get
+            {
+                return selection;
+            }
+            
         }
 
         Plat r = new Plat();

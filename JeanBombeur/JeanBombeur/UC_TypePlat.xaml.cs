@@ -22,12 +22,17 @@ namespace JeanBombeur
     public partial class UC_TypePlat : UserControl
     {
         public Restaurant Restaurant { get; private set; } = App.Restaurant;
-
+  
         public UC_TypePlat()
         {
             InitializeComponent();
             listPlat.DataContext = Restaurant;
             DataContext = this;
+        }
+
+        private void Notes(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

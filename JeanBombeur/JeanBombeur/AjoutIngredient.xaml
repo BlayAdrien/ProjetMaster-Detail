@@ -4,8 +4,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:JeanBombeur"
+             
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:classe="clr-namespace:Metier;assembly=Metier" 
+             
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ObjectDataProvider x:Key="Enum" MethodName="GetValues"
+                            ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="classe:Unite"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </UserControl.Resources>
     <Grid Background="#585453">
         <DockPanel Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Stretch">
             <Grid>
@@ -16,7 +28,7 @@
                 </Grid.ColumnDefinitions>
                     <TextBox Height="Auto" Text="{Binding NomIngredient, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch"/>
                     <TextBox Height="Auto" Text="{Binding Quantite.ValeurQuantite, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" HorizontalAlignment="Stretch" />
-                    <ComboBox Grid.Column="2" SelectedItem="{Binding Quantite.Unite, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch"/>
+                    <ComboBox Grid.Column="2" SelectedItem="{Binding Quantite.Unite, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" ItemsSource="{Binding Source={StaticResource Enum}}"/>
             </Grid>
         </DockPanel>
     </Grid>
