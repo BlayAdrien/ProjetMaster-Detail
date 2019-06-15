@@ -26,8 +26,15 @@ C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\obj\Debug\Metier.csprojResolveA
 C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\obj\Debug\Metier.csproj.CoreCompileInputs.cache
 C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\obj\Debug\Metier.dll
 C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\obj\Debug\Metier.pdb
+<<<<<<< .mine
+C:\Users\YASSI\Desktop\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csprojAssemblyReference.cache
+||||||| .r41
+=======
 U:\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csprojAssemblyReference.cache
 U:\Projet XAML\JeanBombeur\Metier\bin\Debug\System.Threading.Tasks.Dataflow.dll
 U:\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csproj.CopyComplete
 C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\bin\Debug\System.Threading.Tasks.Dataflow.dll
 C:\Users\adrib\Desktop\Projet\JeanBombeur\Metier\obj\Debug\Metier.csproj.CopyComplete
+>>>>>>> .r58
+C:\Users\YASSI\Desktop\Projet XAML\JeanBombeur\Metier\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\YASSI\Desktop\Projet XAML\JeanBombeur\Metier\obj\Debug\Metier.csproj.CopyComplete
