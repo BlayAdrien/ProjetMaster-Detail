@@ -13,6 +13,10 @@ namespace TestMetier
     {
         static void Main(string[] args)
         {
+        }
+    }
+}
+            /*
             FabriqueCategorieStub stub = new FabriqueCategorieStub(();
             WriteLine(stub);
             WriteLine(stub);

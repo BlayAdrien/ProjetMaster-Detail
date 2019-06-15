@@ -20,7 +20,7 @@ namespace Donnee
                     new Ingredient("de coulis de tomates", new Quantite(100, Unite.g)),
                     new Ingredient("de tranches de jambon", new Quantite(4, Unite.unité)),
                     new Ingredient("de gruyère rapé", new Quantite(30, Unite.g)),
-                    new Ingredient("de champignon", new Quantite(250, Unite.g)),
+                    new Ingredient("de champignon", new Quantite(250, Unite.g))
                 }
             ));
 
@@ -30,8 +30,7 @@ namespace Donnee
                     new Ingredient("de coulis de tomates", new Quantite(150, Unite.g)),
                     new Ingredient("de mozzarella", new Quantite(100, Unite.g)),
                     new Ingredient("de tranches de jambon", new Quantite(3, Unite.unité)),
-                    new Ingredient("d'ananas", new Quantite(1, Unite.unité)),
-
+                    new Ingredient("d'ananas", new Quantite(1, Unite.unité))
                 }
             ));
 
@@ -40,7 +39,7 @@ namespace Donnee
                  {
                     new Ingredient("de coulis de tomates", new Quantite(700, Unite.g)),
                     new Ingredient("de mozzarella", new Quantite(400, Unite.g)),
-                    new Ingredient("de feuilles de basilic", new Quantite(30, Unite.unité)),
+                    new Ingredient("de feuilles de basilic", new Quantite(30, Unite.unité))
                  }
              ));
 
@@ -51,7 +50,7 @@ namespace Donnee
                     new Ingredient("de gorgonzola", new Quantite(160, Unite.g)),
                     new Ingredient("de parmesan râpés", new Quantite(80, Unite.g)),
                     new Ingredient("de mozzarella", new Quantite(100, Unite.g)),
-                    new Ingredient("de fromages de chèvre", new Quantite(160, Unite.g)),
+                    new Ingredient("de fromages de chèvre", new Quantite(160, Unite.g))
                  }
              ));
 
@@ -64,7 +63,7 @@ namespace Donnee
                     new Ingredient("d'huile d'olive ", new Quantite(4, Unite.càs)),
                     new Ingredient("de tomates", new Quantite(3, Unite.unité)),
                     new Ingredient("d'aubergine", new Quantite(1, Unite.unité)),
-                    new Ingredient("de poignée d'olives", new Quantite(1, Unite.unité)),
+                    new Ingredient("de poignée d'olives", new Quantite(1, Unite.unité))
                  }
              ));
 
@@ -76,7 +75,7 @@ namespace Donnee
                     new Ingredient("de feuilles de laitue", new Quantite(2, Unite.unité)),
                     new Ingredient("de tranche de cheddar", new Quantite(1, Unite.unité)),
                     new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
-                    new Ingredient("de cornichons", new Quantite(3, Unite.unité)),
+                    new Ingredient("de cornichons", new Quantite(3, Unite.unité))
                  }
              ));
 
@@ -87,7 +86,7 @@ namespace Donnee
                     new Ingredient("de filet de colin pané", new Quantite(400, Unite.g)),
                     new Ingredient("de feuilles de laitue", new Quantite(2, Unite.unité)),
                     new Ingredient("de sauce maison", new Quantite(1, Unite.unité)),
-                    new Ingredient("de cornichons", new Quantite(3, Unite.unité)),
+                    new Ingredient("de cornichons", new Quantite(3, Unite.unité))
                  }
              ));
 
@@ -97,7 +96,7 @@ namespace Donnee
                     new Ingredient("de pain à burger", new Quantite(2 , Unite.unité)),
                     new Ingredient("de filet de d'escalope pané", new Quantite(400, Unite.g)),
                     new Ingredient("de feuilles de laitue", new Quantite(2, Unite.unité)),
-                    new Ingredient("de sauce maison", new Quantite(1, Unite.unité)),
+                    new Ingredient("de sauce maison", new Quantite(1, Unite.unité))
                 }
              ));
 
@@ -109,7 +108,7 @@ namespace Donnee
                     new Ingredient("de tranches de cheddar", new Quantite(3, Unite.unité)),
                     new Ingredient("de sauce burger", new Quantite(1, Unite.unité)),
                     new Ingredient("de tranches de lard fumé", new Quantite(6, Unite.unité)),
-                    new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
+                    new Ingredient("d'oignons", new Quantite(1, Unite.unité))
                 }
             ));
 
@@ -121,7 +120,7 @@ namespace Donnee
                     new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
                     new Ingredient("de comcombre", new Quantite(1, Unite.unité)),
                     new Ingredient("de tomate", new Quantite(1, Unite.unité)),
-                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité)),
+                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité))
                 }
             ));
 
@@ -133,7 +132,7 @@ namespace Donnee
                     new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
                     new Ingredient("de comcombre", new Quantite(1, Unite.unité)),
                     new Ingredient("de tomate", new Quantite(1, Unite.unité)),
-                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité)),
+                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité))
               }
             ));
 
@@ -145,7 +144,7 @@ namespace Donnee
                     new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
                     new Ingredient("de comcombre", new Quantite(1, Unite.unité)),
                     new Ingredient("de tomate", new Quantite(1, Unite.unité)),
-                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité)),
+                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité))
               }
           ));
 
@@ -156,7 +155,7 @@ namespace Donnee
                     new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
                     new Ingredient("de comcombre", new Quantite(1, Unite.unité)),
                     new Ingredient("de tomate", new Quantite(1, Unite.unité)),
-                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité)),
+                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité))
               }
           ));
 
@@ -169,13 +168,11 @@ namespace Donnee
                     new Ingredient("d'oignons", new Quantite(1, Unite.unité)),
                     new Ingredient("de comcombre", new Quantite(1, Unite.unité)),
                     new Ingredient("de tomate", new Quantite(1, Unite.unité)),
-                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité)),
+                    new Ingredient("de feuilles de laitue", new Quantite(3, Unite.unité))
               }
           ));
 
-
             return r;
-
         }
     }
 }

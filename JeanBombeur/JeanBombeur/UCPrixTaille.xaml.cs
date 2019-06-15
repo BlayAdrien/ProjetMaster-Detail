@@ -32,7 +32,6 @@ namespace JeanBombeur
         public static readonly DependencyProperty TailleProperty = DependencyProperty.Register("Taille", typeof(string), typeof(UCPrixTaille));
         public static readonly DependencyProperty PrixPlatProperty = DependencyProperty.Register("PrixPlat",typeof(float), typeof(UCPrixTaille));
 
-        
 
         public string Taille
         {

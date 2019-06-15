@@ -1,4 +1,5 @@
 ﻿using Metier;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,32 +22,45 @@ namespace JeanBombeur
     /// </summary>
     public partial class Pizza : Page
     {
-
         public Pizza()
         {
             InitializeComponent();
-
         }
-            private void Accueil(object sender, RoutedEventArgs e)
-            {
+
+        private void Accueil(object sender, RoutedEventArgs e)
+        {
                 Categorie c = new Categorie();
                 this.NavigationService.Navigate(c);
-            }
+        }
 
 
-            private void AjoutPlat(object sender, RoutedEventArgs e)
-            {
+        private void AjoutPlat(object sender, RoutedEventArgs e)
+        {
                 Window ajoutPlat = new AjoutPlat();
                 ajoutPlat.Show();
-            }
+        }
+
         private void Sauvegarder(object sender, RoutedEventArgs e)
         {
-
+            SaveFileDialog sauver = new SaveFileDialog();
+            sauver.Filter = "Extensible Markup Language (*.xml) | *.xml";
+            sauver.Title = "Enregistrer sous";
+            if (sauver.ShowDialog() == true)
+            {
+                Persistance.Sauvegarde(sauver.FileName, App.Sauvegarde);
+            }
         }
 
         private void Charger(object sender, RoutedEventArgs e)
         {
+            OpenFileDialog charger = new OpenFileDialog();
+            charger.Title = "Charger toutes les catégories";
+            charger.Filter = "Extended Markup Language (*.xml) | *.xml";
 
+            if (charger.ShowDialog() == true)
+            {
+                Persistance.Sauvegarde(charger.FileName, App.Sauvegarde);
+            }
 
         }
     }

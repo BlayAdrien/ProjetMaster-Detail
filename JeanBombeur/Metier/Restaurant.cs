@@ -48,12 +48,6 @@ namespace Metier
             }
         }
 
-
-        public void ValiderPlat(Plat p)
-        {
-            listPlat.Add(p);
-        }
-
         private string filter;
 
         public string Filter
@@ -74,26 +68,37 @@ namespace Metier
                 }
             }
         }
+
         private IEnumerable<Plat> list;
         public IEnumerable<Plat> ListPlatFiltre
         {
             get
             {
-                
+
                 if (Plat.Equals(filter, "Pizza"))
                 {
-                    list =  ListPlat.Where(p => p.Categorie.StartsWith("Pizza"));
+                    list = ListPlat.Where(p => p.Categorie.StartsWith("Pizza"));
                 }
-                if (Plat.Equals(filter,"Hamburger"))
+                if (Plat.Equals(filter, "Hamburger"))
                 {
                     list = ListPlat.Where(p => p.Categorie.StartsWith("Hamburger"));
                 }
                 if (Plat.Equals(filter, "Sandwich"))
                 {
-                    list =  ListPlat.Where(p => p.Categorie.StartsWith("Sandwich"));
+                    list = ListPlat.Where(p => p.Categorie.StartsWith("Sandwich"));
                 }
                 return list;
             }
+        }
+
+        public void ValiderPlat(Plat p)
+        {
+            listPlat.Add(p);
+        }
+
+        public void AjouterPlat(Plat p)
+        {
+            listPlat.Add(p);
         }
 
 
@@ -102,15 +107,12 @@ namespace Metier
             listPlat = new ObservableCollection<Plat>();
         }
 
+
         public Restaurant(string nomResto)
         {
             this.nomResto = nomResto;
         }
 
-        public void AjouterPlat(Plat p)
-        {
-            listPlat.Add(p);
-        }
 
         public override bool Equals(object other)
         {

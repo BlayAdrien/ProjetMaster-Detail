@@ -45,13 +45,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ingredient.cs" />
-    <Compile Include="Panier.cs" />
-    <Compile Include="Persistance.cs" />
+    <Compile Include="Persistance\Persistance.cs" />
     <Compile Include="Plat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Quantite.cs" />
     <Compile Include="Restaurant.cs" />
     <Compile Include="Unite.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -21,40 +21,11 @@ namespace JeanBombeur
     /// </summary>
     public partial class Categorie : Page
     {
-
-
-        private Restaurant selection;
-        private ListView listViewFiltre;
-        public Restaurant Selection
-        {
-            get
-            {
-                return selection;
-            }
-            set
-            {
-                selection = value;
-            }
-        }
-
-        public ListView ListViewFiltre {
-            get
-            {
-                return listViewFiltre;
-            }
-            set
-            {
-                listViewFiltre = value;
-            }
-        }
-
-
         public Categorie()
         {
             InitializeComponent();
         }
 
-        
         private void Sandwich(object sender, RoutedEventArgs e)
         {
             Sandwich s = new Sandwich();
@@ -71,30 +42,6 @@ namespace JeanBombeur
         {
             Hamburger t = new Hamburger();
             this.NavigationService.Navigate(t);
-        } 
-
-        
+        }   
     }
 }
-
-
-
-
-/*
- * private void Filtrage(object sender, RoutedEventArgs e)
-        {
-            Button b = sender as Button;
-            switch (b.Name)
-            {
-                case "Sandwich":
-                    ListViewFiltre.ItemsSource = Selection.ListPlatFiltre("Sandwich");
-                    break;
-                case "Pizza":
-                    ListViewFiltre.ItemsSource = Selection.ListPlatFiltre("Pizza");
-                    break;
-                case "Hamburger":
-                    ListViewFiltre.ItemsSource = Selection.ListPlatFiltre("Hamburger");
-                    break;
-            }
-        }
-*/

@@ -22,14 +22,6 @@ namespace Metier
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-
-        public override int GetHashCode()
-        {
-            return NomPlat.GetHashCode();
-        }
-
-
-
         private string nomPlat;
         public string NomPlat
         {
@@ -172,6 +164,16 @@ namespace Metier
         public bool Equals(Plat plat)
         {
             return (this.NomPlat.Equals(plat.NomPlat) && this.Categorie == plat.Categorie);
+        }
+
+        public override int GetHashCode()
+        {
+            return NomPlat.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return categorie.ToString() + nomPlat.ToString() + taille.ToString() + image.ToString() + prixPlat.ToString() + listIngredient.ToString();
         }
     }
 }
