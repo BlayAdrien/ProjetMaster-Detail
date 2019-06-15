@@ -16,7 +16,9 @@ using System.Windows.Threading;
 
 namespace JeanBombeur
 {
-    
+    /// <summary>
+    /// Logique d'interaction pour Accueil.xaml
+    /// </summary>
     public partial class Accueil : Page
     {
         MainWindow window;

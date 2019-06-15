@@ -6,8 +6,9 @@
              xmlns:local="clr-namespace:JeanBombeur"
              mc:Ignorable="d" 
              d:DesignHeight="163" d:DesignWidth="180">
-    
-    
+
+    <!-- Mise en place des images pour former la fonctionalité pour noter un plat -->
+
     <StackPanel Orientation="Horizontal">
         <Button x:Name="cochon1" >
             <Button.Template>

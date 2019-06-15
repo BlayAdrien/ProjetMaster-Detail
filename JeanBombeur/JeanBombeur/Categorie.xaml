@@ -8,10 +8,14 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Categorie">
 
+    <!-- IMAGE EN FOND D'ECRAN -->
+
     <Page.Background>
         <ImageBrush ImageSource="/Image/Logo/Background.jpg" Stretch="UniformToFill" />
     </Page.Background>
-
+    
+    <!-- Style pour la page des catégories -->
+    
     <Page.Resources>
         <Style x:Key="Choose" TargetType="TextBlock">
             <Setter Property="Margin" Value="0,0,0,250" />
@@ -26,7 +30,9 @@
             <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
     </Page.Resources>
-
+    
+    <!-- Refonte de la page -->
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -36,7 +42,8 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
+
+        <!-- Boutons et zones de texte présent sur cette page -->
 
         <TextBlock Text="Choisir une categorie" Style="{StaticResource Choose}" Grid.Row="0" Grid.Column="1" Panel.ZIndex="1"/>
         <Button Click="Sandwich" Grid.Column="0" Margin="0,0,5,0" Style="{StaticResource Bouton}" >

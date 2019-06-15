@@ -7,11 +7,12 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Accueil">
-
+<!-- IMAGE EN FOND D'ECRAN -->
     <Page.Background>
         <ImageBrush ImageSource="/Image/Logo/logoApli.png" Stretch="Uniform" />
     </Page.Background>
-
+    
+<!-- MIS EN PLACE D'UN BOUTON -->
     <Grid>
         <StackPanel VerticalAlignment="Bottom">
             <Button Content="Lancer l'application" Height="30" Click="Button_Click1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,85"/>

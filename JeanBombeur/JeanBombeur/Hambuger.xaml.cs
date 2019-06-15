@@ -18,7 +18,7 @@ using System.Windows.Shapes;
 namespace JeanBombeur
 {
     /// <summary>
-    /// Logique d'interaction pour Tacos.xaml
+    /// Logique d'interaction pour Hamburger.xaml
     /// </summary>
     public partial class Hamburger : Page
     {

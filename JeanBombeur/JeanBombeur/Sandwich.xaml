@@ -8,9 +8,14 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Sandwich">
 
+    <!-- IMAGE EN FOND D'ECRAN -->
+
     <Page.Background>
         <ImageBrush ImageSource="/Image/Logo/Background.jpg" Stretch="UniformToFill" />
     </Page.Background>
+
+    <!-- Mise en place des boutons pour accéder aux différentes fonctionalités -->
+
     <Grid>
         <local:UC_TypePlat/>
         <Button Style="{StaticResource BtnUC}" Content="Accueil" Click="Accueil" HorizontalAlignment="Right" VerticalAlignment="Top" Width="50" />

@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:JeanBombeur"
         mc:Ignorable="d"
         Title="AjoutPlat" Height="600" Width="400">
+    
     <Grid x:Name="ajoutPlat" Background="#585453">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

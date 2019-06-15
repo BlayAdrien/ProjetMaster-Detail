@@ -10,6 +10,8 @@
              
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
+    <!-- Permet d'ajouter un ingrédient lors de la saisie d'une nouvelle recette -->
     <UserControl.Resources>
         <ObjectDataProvider x:Key="Enum" MethodName="GetValues"
                             ObjectType="{x:Type sys:Enum}">

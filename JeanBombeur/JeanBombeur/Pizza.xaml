@@ -7,9 +7,14 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Pizza">
+
+    <!-- IMAGE EN FOND D'ECRAN -->
+
     <Page.Background>
         <ImageBrush ImageSource="/Image/Logo/Background.jpg" Stretch="UniformToFill" />
     </Page.Background>
+
+    <!-- Mise en place des boutons pour accéder aux différentes fonctionalités -->
 
     <Grid>
         <local:UC_TypePlat/>
