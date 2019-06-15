@@ -13,8 +13,19 @@ namespace TestMetier
     {
         static void Main(string[] args)
         {
-            Restaurant r = new FabriqueCategorieStub().CreateCategorie();
- 
+            FabriqueCategorieStub stub = new FabriqueCategorieStub(();
+            WriteLine(stub);
+            WriteLine(stub);
+
+
+
+
+
+            WriteLine("Fabrication du STUB : \n");
+            Restaurant r = new FabriqueCategorieVide().CreateCategorie();
+            WriteLine(r);
+
+            WriteLine(r);
             IEnumerable<Plat> filter = r.ListPlat;
             foreach (Plat p in filter)
             {
@@ -24,3 +35,22 @@ namespace TestMetier
         }
     }
 }
+/*
+WriteLine("Ajout de plat. \n");
+Restaurant resto = new Restaurant("Restaurant1");
+r.AjouterPlat(new Plat());
+            WriteLine(r);
+
+
+WriteLine("Ajout d'un Ingrédient dans un plat");
+Plat p = new Plat("Pizza", "Chevre-Miel", "M", 12, new ObservableCollection<Ingredient>());
+p.AjouterIngredient(new Ingredient());
+            WriteLine(p);
+
+
+IEnumerable<Plat> filter = r.ListPlat;
+foreach (Plat p in filter)
+{
+    WriteLine(p.NomPlat);
+}
+WriteLine();*/

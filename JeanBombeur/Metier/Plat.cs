@@ -116,6 +116,16 @@ namespace Metier
             listIngredient = new ObservableCollection<Ingredient>(); ;
         }
 
+        public Plat(string categorie, string nomPlat, string taille, float prixPlat, ObservableCollection<Ingredient> listIngredient)
+        {
+            Categorie = categorie;
+            NomPlat = nomPlat;
+            Image = image;
+            Taille = taille;
+            PrixPlat = prixPlat;
+            this.listIngredient = listIngredient;
+        }
+
 
 
         public Plat(string categorie, string nomPlat, string image, string taille, float prixPlat, ObservableCollection<Ingredient> listIngredient)
