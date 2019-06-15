@@ -45,17 +45,29 @@ namespace Metier
             }
         }
 
+        /// <summary>
+        /// Constructeur par défaut de quantité
+        /// </summary>
+
         public Quantite()
         {
             valeurQuantite = 0;
             unite = Unite.unité;
         }
 
+        /// <summary>
+        /// Constructeur de quantité avec deux paramètres : valeurQuantité et unité.
+        /// </summary>
+
         public Quantite(int valeurQuantite, Unite unite)
         {
             this.valeurQuantite = valeurQuantite;
             this.unite = unite;
         }
+
+        /// <summary>
+        /// Retourne une valeurQuantité et une unité.
+        /// </summary>
 
         public override string ToString()
         {

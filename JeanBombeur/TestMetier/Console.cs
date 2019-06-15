@@ -16,15 +16,7 @@ namespace TestMetier
         }
     }
 }
-            /*
-            FabriqueCategorieStub stub = new FabriqueCategorieStub(();
-            WriteLine(stub);
-            WriteLine(stub);
-
-
-
-
-
+ /*
             WriteLine("Fabrication du STUB : \n");
             Restaurant r = new FabriqueCategorieVide().CreateCategorie();
             WriteLine(r);

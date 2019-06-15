@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Metier
 {
+    /// <summary>
+    /// Classe énumération de Unité.
+    /// </summary>
+
     public enum Unite
     {
         kg,

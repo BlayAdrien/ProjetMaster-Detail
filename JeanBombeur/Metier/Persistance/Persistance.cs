@@ -13,6 +13,11 @@ namespace Metier
 {
     public class Persistance
     {
+        /// <summary>
+        /// Méthode de sauvegarde d'un restaurant. 
+        /// </summary>
+        /// <param name="chemin"> Chemin vers lequel sera effetué la sauvegarde.</param>
+
         public static void Sauvegarde(string chemin, Restaurant r)
         {
             using (Stream stream = new FileStream(chemin, FileMode.Create))
@@ -21,6 +26,13 @@ namespace Metier
                 XML.Serialize(stream, r);
             }
         }
+
+        /// <summary>
+        /// Méthode de chargement.
+        /// </summary>
+        /// <param name="chemin">Chemin vers lequel se fera le chargement.</param>
+        /// <returns>return le restaurant qui sera déserialisé.</returns>
+ 
         public static Restaurant Charge(string chemin)
         {
             using (Stream stream = new FileStream(chemin, FileMode.Open))

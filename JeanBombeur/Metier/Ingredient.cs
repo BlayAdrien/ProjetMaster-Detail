@@ -50,12 +50,22 @@ namespace Metier
             }
         }
 
+
+        /// <summary>
+        /// Constructeur d'ingredient, contient 2 paramètres : un nomIngredient et une quantite.
+        /// </summary>
+
+
         public Ingredient(string nomIngredient, Quantite quantite)
         {
             this.nomIngredient = nomIngredient;
             this.quantite = quantite;
         }
 
+        /// <summary>
+        /// Constructeur par défaut d'un Ingrédient.
+        /// </summary>
+ 
         public Ingredient()
         {
             nomIngredient = "default";
@@ -63,6 +73,9 @@ namespace Metier
 
         }
 
+        /// <summary>
+        /// Retourne une quantité et un nom!ingrédient. 
+        /// </summary>
 
         public override string ToString()
         {

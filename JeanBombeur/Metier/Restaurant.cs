@@ -10,6 +10,10 @@ using System.Runtime.CompilerServices;
 
 namespace Metier
 {
+    /// <summary>
+    /// Class Restaurant
+    /// </summary>
+
     public class Restaurant :INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
@@ -91,21 +95,38 @@ namespace Metier
             }
         }
 
+        /// <summary>
+        /// Méthode d'ajout d'une liste de plat.
+        /// </summary>
+        /// <param name="p">Plat à ajouter.</param>
+
         public void ValiderPlat(Plat p)
         {
             listPlat.Add(p);
         }
+
+        /// <summary>
+        /// Méthode d'ajout d'une liste de plat.
+        /// </summary>
+        /// <param name="p">Plat à ajouter.</param>
 
         public void AjouterPlat(Plat p)
         {
             listPlat.Add(p);
         }
 
+        /// <summary>
+        /// Constructeur par défaut d'un restaurant. 
+        /// </summary>
 
         public Restaurant()
         {
             listPlat = new ObservableCollection<Plat>();
         }
+
+        /// <summary>
+        /// Constructeur d'un restaurant avec un nomResto.
+        /// </summary>
 
 
         public Restaurant(string nomResto)
@@ -113,7 +134,12 @@ namespace Metier
             this.nomResto = nomResto;
         }
 
-
+        /// <summary>
+        /// Méthode de equals
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns>return un booléen.</returns>
+        
         public override bool Equals(object other)
         {
             if (object.ReferenceEquals(other, null))
@@ -133,6 +159,12 @@ namespace Metier
 
             return this.Equals(other as Restaurant);
         }
+
+        /// <summary>
+        /// Méthode de GetHashCode
+        /// </summary>
+        /// <returns>return un int</returns>
+
 
         public override int GetHashCode()
         {

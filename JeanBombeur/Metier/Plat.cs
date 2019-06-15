@@ -9,13 +9,8 @@ using System.Threading.Tasks;
 
 namespace Metier
 {
-    
-
     public class Plat : INotifyPropertyChanged , IEquatable<Plat>
     {
-
-     //   private Dictionary<string, float> dico; 
-
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
@@ -63,7 +58,6 @@ namespace Metier
                 taille = value;               
                 OnPropertyChanged("Taille");
             }
-
         }
 
         private string categorie; 
@@ -98,6 +92,10 @@ namespace Metier
             }
         }
 
+        /// <summary>
+        /// Constructeur par défaut de Plat.
+        /// </summary>
+
         public Plat()
         {
             Categorie = "default";
@@ -107,6 +105,11 @@ namespace Metier
             Taille = "default"; 
             listIngredient = new ObservableCollection<Ingredient>(); ;
         }
+
+        /// <summary>
+        /// Constructeur de Plat avec 5 paramètres : une catégorie, un nomPlat, une taille, un prixPlat et une listIngrédient.
+        /// </summary>
+
 
         public Plat(string categorie, string nomPlat, string taille, float prixPlat, ObservableCollection<Ingredient> listIngredient)
         {
@@ -118,8 +121,10 @@ namespace Metier
             this.listIngredient = listIngredient;
         }
 
-
-
+        /// <summary>
+        /// Constructeur de Plat avec 6 paramètres : Une catégorie, un nom de plat, une taille, un prix, une image et une listIngredient.
+        /// </summary>
+ 
         public Plat(string categorie, string nomPlat, string image, string taille, float prixPlat, ObservableCollection<Ingredient> listIngredient)
         {
             Categorie = categorie;
@@ -130,15 +135,31 @@ namespace Metier
             this.listIngredient = listIngredient;
         }
 
+        /// <summary>
+        /// Méthode d'ajout d'un ingrédient. 
+        /// </summary>
+        /// <param name="i">Ingrédient à ajouter.</param>
+
         public void AjouterIngredient(Ingredient i)
         {
             listIngredient.Add(i);
         }
 
+        /// <summary>
+        /// Méthode de suppression d'un ingrédient.
+        /// </summary>
+        /// <param name="i">Ingrédient à supprimer.</param>
+
         public bool SupprimerIngredient(Ingredient i)
         {
             return (listIngredient.Remove(i));
         }
+
+        /// <summary>
+        /// Méthode de equals
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns>return un booléen.</returns>
 
         public override bool Equals(object obj)
         {
@@ -166,11 +187,19 @@ namespace Metier
             return (this.NomPlat.Equals(plat.NomPlat) && this.Categorie == plat.Categorie);
         }
 
+        /// <summary>
+        /// Méthode de GetHashCode
+        /// </summary>
+        /// <returns>return un int</returns>
+
         public override int GetHashCode()
         {
             return NomPlat.GetHashCode();
         }
 
+        /// <summary>
+        /// Retourne une Une catégorie, un nom de plat, une taille, un prix, une image et une listIngredient.
+        /// </summary>
         public override string ToString()
         {
             return categorie.ToString() + nomPlat.ToString() + taille.ToString() + image.ToString() + prixPlat.ToString() + listIngredient.ToString();
